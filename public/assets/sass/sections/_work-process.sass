@@ -1,0 +1,144 @@
+/*******************************************************/
+/**************** ## Work Process Area *****************/
+/*******************************************************/
+.work-step-item
+    padding: 32px 32px 16px
+    background: #0A1019
+    text-align: center
+    margin-bottom: 30px
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        +poLT(0)
+        +size(100%)
+        background-image: url("../images/shapes/work-step-bg.png")
+        background-color: $color-primary
+        visibility: hidden
+        opacity: 0
+        transition: .3s
+        z-index: -1
+    &:after
+        content: "\f105"
+        font-family: "Font Awesome 5 Pro"
+        color: rgba(255, 255, 255, 0.3)
+        +poLT(calc(100% + 42px), 50%)
+        transform: translateY(-50%)
+        transition: .3s
+        +res-bl(xxl)
+            left: calc(100% + 12px)
+        +res-bl(xl)
+            content: none
+    &.arrow-none:after
+        content: none
+    &.bg-shape-none:before
+        background-image: none
+    .step-number
+        font-size: 18px
+        font-weight: 500
+        color: $color-primary
+        display: inline-block
+        margin-bottom: 10px
+        transition: .3s
+    .title
+        font-size: 22px
+        margin-bottom: 30px
+        transition: .3s
+    .content
+        line-height: 30px
+        padding-top: 20px
+        border-top: 1px solid $color-border
+        transition: .3s
+    &:hover
+        &:before
+            visibility: visible
+            opacity: 1
+        &:after
+            color: white
+        .step-number,
+        .title,
+        .content
+            color: $color-dark
+        .content
+            border-color: $color-dark
+
+.bg-line-shape
+    +abs-middle()
+    z-index: -1
+    width: 100%
+    top: 44%
+    +res-ab(lb)
+        width: 118%
+    +res-bl(xl)
+        display: none
+            
+.work-step-item.style-two
+    +size(270px)
+    +gapLR(margin, auto)
+    +flexcenter(center)
+    flex-direction: column
+    border-radius: 50%
+    +res-bl(md)
+        margin-top: 0
+    &:before
+        border-radius: 50%
+    &:after
+        content: ''
+        +size(100%)
+        left: 0
+        top: 0
+        z-index: -2
+        border-radius: 50%
+        border: 2px solid rgba(255, 255, 255, 0.2)
+        transform: translate(0)
+        visibility: hidden
+        opacity: 0
+        transition: .3s
+    &:hover
+        &:after
+            visibility: visible
+            opacity: 1
+            left: 10px
+            top: 10px
+    
+.work-step-item.style-three
+    +size(270px)
+    +gapLR(margin, auto)
+    +flexcenter(center)
+    flex-direction: column
+    border-radius: 50%
+    border: 1px solid $color-border
+    background: transparent
+    &:before
+        content: none
+    .step-number
+        color: $color-primary
+    .title
+        color: white
+    .content
+        color: $color-body
+        border-color: $color-border
+    .image
+        +poRB(30%, 30%)
+        transform: scale(0) rotate(15deg)
+        visibility: hidden
+        opacity: 0
+        transition: .5s;
+        img
+            border-radius: 12px
+    &:hover
+        z-index: 3
+        .image
+            visibility: visible
+            opacity: 1
+            right: -27px
+            bottom: -29%
+            transform: scale(1) rotate(-15deg)
+            +res-bl(xs)
+                right: 0
+        
+.work-process-three-area
+    .work-step-item:after
+        left: calc(100% + 32px)
+        +res-bl(xxl)
+            content: none

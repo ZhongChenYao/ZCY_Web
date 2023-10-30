@@ -1,0 +1,113 @@
+/*******************************************************/
+/******************* ## Page Banner *******************/
+/*******************************************************/
+.page-banner-area
+    +overlay(#111111, 0.9)
+    &:before
+        mix-blend-mode: multiply
+.banner-inner
+    h2
+        margin-bottom: 20px
+        +res-ab(lg)
+            font-size: 55px
+        +res-bl(md)
+            font-size: 40px
+            margin-bottom: 10px
+        +res-bl(sm)
+            font-size: 36px
+            
+.banner-text
+    +res-ab(sm)
+        font-size: 18px
+            
+.breadcrumb
+    padding: 0
+    margin: 0
+    font-size: 20px
+    background: transparent
+    text-transform: capitalize
+    +res-bl(sm)
+        font-size: 18px
+    +res-bl(xs)
+        font-size: 16px
+    .breadcrumb-item
+        padding: 0
+        font-weight: 400
+        +flexcenter(center)
+        &.active
+            color: $color-primary
+            text-decoration: underline
+            text-underline-offset: 3px
+            text-decoration-thickness: 1px
+        &+.breadcrumb-item::before
+            +gapLR(margin, 15px)
+            flex: none
+            color: white
+            content: "\f105"
+            font-family: "Font Awesome 5 Pro"
+            
+            
+/* Advertise Banner */
+.advertise-banner
+    display: flex
+    margin-bottom: 30px
+    height: calc(100% - 30px)
+    justify-content: space-between
+    &.style-one
+        color: $color-dark
+        background-size: cover
+        padding: 25px 50px 0 40px
+        background-position: center
+        +res-bl(sm)
+            flex-wrap: wrap
+        .image
+            align-self: end
+        .content
+            max-width: 215px
+            +res-bl(sm)
+                max-width: none
+                margin-bottom: 20px
+            .number
+                line-height: 1
+                display: block
+                font-size: 85px
+                font-weight: 700
+                margin-bottom: 8px
+                +res-bl(xs)
+                    font-size: 60px
+            h6
+                font-size: 20px
+                font-weight: 600
+                color: $color-dark
+            hr
+                height: 2px
+                background-color: $color-dark
+                opacity: 1
+                margin-top: 35px
+            p
+                font-weight: 500
+    &.style-two
+        color: $color-dark
+        flex-direction: column
+        background-repeat: no-repeat
+        padding: 50px 60px 35px 60px
+        background-position: top right
+        +res-bl(ms)
+            +gapLR(padding, 35px)
+        h3
+            font-size: 27px
+            color: $color-dark
+            margin-bottom: 20px
+            +res-bl(xs)
+                font-size: 25px
+        hr
+            height: 2px
+            background-color: $color-dark
+            opacity: 1
+        .authors-text
+            flex-wrap: wrap
+            margin-top: auto
+            .text
+                font-weight: 400
+                max-width: 202px
+                +gapTB(margin, 15px)

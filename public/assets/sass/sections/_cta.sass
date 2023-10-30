@@ -1,0 +1,44 @@
+/*******************************************************/
+/********************* ## CTA Area *********************/
+/*******************************************************/
+.cta-wrap
+    flex-wrap: wrap
+    +flexcenter(center)
+    +gapLR(margin, -15px)
+    > *
+        margin: 0 15px 15px
+    h4
+        text-align: center
+        color: $color-dark
+        +res-ab(sm)
+            font-size: 27px
+    .theme-btn
+        color: $color-dark
+        +gapTB(padding, 4px)
+        border: 2px solid $color-dark
+        &:hover
+            border: 2px solid $color-dark
+        
+.cta-shapes
+    .shape
+        z-index: -1
+        max-width: 5%
+        position: absolute
+        &.one
+            left: 5%
+            bottom: 20px
+        &.two
+            left: 15%
+            top: 25px
+        &.three
+            left: 25%
+            top: 30px
+        &.four
+            right: 15%
+            bottom: 20px
+        &.five
+            right: 25%
+            top: 30px
+        &.six
+            right: 5%
+            top: 30px

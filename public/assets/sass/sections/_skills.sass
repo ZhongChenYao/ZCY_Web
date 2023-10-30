@@ -1,0 +1,54 @@
+/*******************************************************/
+/******************* ## Skills Area ********************/
+/*******************************************************/
+.skills-wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.skill-item
+    padding: 17px 40px
+    border-radius: 40px
+    background: white
+    margin-bottom: 35px
+    +gapLR(margin, 15px)
+    display: flex
+    align-items: center
+    max-width: max-content
+    box-shadow: 0 5px 0 0 $color-primary
+    +res-bl(md)
+        padding: 8px 15px
+        +gapLR(margin, 5px)
+        margin-bottom: 20px
+    img
+        +res-bl(md)
+            max-width: 20px
+    .text
+        color: #181818
+        font-size: 20px
+        font-weight: 600
+        margin-left: 15px
+        +res-bl(md)
+            font-size: 15px
+            margin-left: 8px
+
+/* My Skills */
+.my-skill-images
+    display: flex
+    flex-wrap: wrap
+    padding: 40px 40px 20px
+    background: $color-primary
+    +res-bl(sm)
+        +gapLR(padding, 15px)
+        padding-bottom: 30px
+    .skill-item
+        box-shadow: none
+        border-radius: 0
+        margin: 0 10px 20px
+        border: 2px solid $color-dark
+        +res-ab(md)
+            padding: 15px 28px
+        +res-bl(sm)
+            margin: 0 5px 10px
+        +res-bl(xs)
+            padding: 5px 10px

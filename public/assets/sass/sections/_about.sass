@@ -1,0 +1,133 @@
+/*******************************************************/
+/******************* ## About Area ********************/
+/*******************************************************/
+.about-content
+    .content
+        +res-ab(sm)
+            margin-left: 60px
+        
+.about-image
+    img
+        display: inline-block
+        animation: rotated_circle 30s infinite
+        
+.text-left-border
+    padding-left: 40px
+    max-width: 615px
+    color: white
+    border-left: 4px solid $color-primary
+    +res-ab(xs)
+        font-size: 18px
+    +res-bl(xs)
+        padding-left: 30px
+    
+.about-counter
+    padding-left: 40px
+    +res-bl(xs)
+        padding-left: 30px
+        
+/* About Three */
+.about-area-three
+    .section-title
+        h2
+            +res-bl(ms)
+                font-size: 33px
+            +res-bl(xs)
+                font-size: 28px
+.about-three-content
+    h4
+        margin-top: 55px
+        margin-bottom: 20px
+        +res-ab(xs)
+            font-size: 27px
+        i
+            font-weight: 400
+            color: $color-primary
+            
+/* About Shape */
+.about-three-shapes
+    .year
+        line-height: 1
+        font-weight: 700
+        font-size: 180px
+        background: radial-gradient(83.27% 520.46% at 4.84% 56.94%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.01) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        +poLB(5%)
+        z-index: -1
+    .leaf
+        z-index: -1
+        +poRT(5%, 25%)
+        max-width: 25%
+        
+/* About Four */
+.about-four-wrap
+    background: #0A1019
+    
+.about-four-content
+    .list-style-three
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        li
+            width: 48%
+            font-weight: 600
+            margin-bottom: 18px
+            +res-ab(xl)
+                font-size: 20px
+            +res-bl(ms)
+                width: 100%
+            &:before
+                content: '\f00c'
+            
+/* Awards */
+.award-image
+    z-index: 1
+    position: relative
+    display: inline-block
+    animation: semi_rotated 10s infinite
+    img
+        border-radius: 250px 250px 0 0
+    &:before
+        content: ''
+        z-index: -1
+        width: 135%
+        opacity: 0.1
+        +poLB(50%, -8%)
+        background: white
+        padding-bottom: 135%
+        border-radius: 50%
+        transform: translate(-50%)
+        
+
+.awards-tabs
+    .nav-link
+        transition: 0.5s
+        text-align: left
+        border-radius: 0
+        padding: 0 0 20px
+        +flexcenter(space-between)
+        background-color: transparent
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+        .left
+            .h3
+                display: block
+                +res-bl(xl)
+                    font-size: 25px
+                +res-bl(xs)
+                    font-size: 20px
+            .award-type
+                color: $color-body
+        .details-btn
+            +size(65px)
+            border: none
+            line-height: 65px
+            background: #0A1019
+            &:hover
+                color: $color-dark
+                background: $color-primary
+        &:not(:last-child)
+            margin-bottom: 45px
+        &.active
+            border-color: white
+            background-color: transparent

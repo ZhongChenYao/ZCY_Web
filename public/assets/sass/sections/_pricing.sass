@@ -1,0 +1,143 @@
+/*******************************************************/
+/****************** ## Pricing Area ********************/
+/*******************************************************/ 
+.pricing-plan-item
+    z-index: 2
+    transition: 0.5s
+    position: relative
+    padding: 40px 50px
+    margin-bottom: 40px
+    background: #0A1019
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .badge
+        width: 100%
+        opacity: 0
+        padding: 8px
+        font-size: 14px
+        transition: 0.5s
+        border-radius: 0
+        font-weight: 700
+        text-align: center
+        color: $color-dark
+        text-transform: uppercase
+        +poLB(0, calc(100% - 30px))
+        background: $color-primary
+        i
+            +gapLR(margin, 5px)
+    .icon
+        line-height: 1
+        font-size: 60px
+        margin-bottom: 28px
+        color: $color-primary
+    .price-text
+        color: white
+        display: block
+        +gapTB(margin, 40px)
+        .before
+            font-weight: 600
+        .price
+            font-size: 48px
+            font-weight: 600
+            +res-bl(xs)
+                font-size: 35px
+    .list-style-one
+        padding-bottom: 30px
+        li
+            margin-bottom: 15px
+            &:before
+                font-size: 8px
+        &.two-column
+            display: flex
+            flex-wrap: wrap
+            padding-bottom: 50px
+            justify-content: space-between
+            li
+                width: 100%
+                opacity: 0.75
+                +res-ab(xl)
+                    width: 48%
+    .icon-title-price
+        margin-bottom: 65px
+        padding-bottom: 25px
+        border-bottom: 1px solid $color-border
+        +res-ab(ms)
+            display: flex
+        .icon
+            margin-right: 60px
+            +res-ab(xs)
+                font-size: 80px
+                margin-top: 10px
+            +res-bl(xl)
+                margin-right: 28px
+    .icon-title
+        display: flex
+        margin-bottom: 22px
+        align-items: center
+        .icon
+            margin-bottom: 0
+            margin-right: 20px
+            +circle($color-primary, 60px)
+            line-height: 50px
+        h5
+            margin-bottom: 0
+    .price-offer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .price-text
+            line-height: 1
+            +gapTB(margin, 30px)
+        .offer-text
+            color: white
+            max-width: 45px
+            font-size: 18px
+            line-height: 1.4
+            font-weight: 500
+    &:hover
+        z-index: 1
+        box-shadow: 0px 4px 60px 30px rgba(85, 230, 165, 0.15)
+        .badge
+            opacity: 1
+            bottom: 100%
+    
+    &.style-two
+        box-shadow: none
+        +res-ab(sm)
+            padding: 50px 70px
+    
+    &.style-three
+        box-shadow: none
+        .list-style-one
+            padding-top: 15px
+            padding-bottom: 0
+            margin-bottom: -15px
+
+.pricing-banner
+    height: calc(100% - 40px)
+    min-height: 500px
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    padding: 40px
+    position: relative
+    z-index: 1
+    margin-bottom: 40px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .join-us
+        font-size: 14px
+        font-weight: 600
+        color: white
+    h4
+        font-size: 27px
+        margin-bottom: 20px
+    .details-btn
+        +size(50px)
+        line-height: 50px
+        font-size: 18px
+        &:not(:hover)
+            border-color: white
+    .hand-shape
+        +poRT(42px, 120px)
+        z-index: -1

@@ -1,0 +1,91 @@
+/*******************************************************/
+/****************** ## Videos Area ********************/
+/*******************************************************/ 
+/* Video Play */
+.video-play
+    color: orange
+    font-size: 18px
+    display: inline-block
+    +circle(white, 120px)
+    &:hover
+        color: $color-primary
+    +res-bl(md)
+        +size(80px)
+        font-size: 16px
+        line-height: 80px
+        
+/* Video Play With Text */
+.video-play-text
+    align-items: center
+    display: inline-flex
+    i
+        color: white
+        font-size: 14px
+        margin-right: 15px
+        +circle($color-primary, 55px)
+    span
+        font-weight: 500
+        color: $color-secondary
+        text-decoration: underline
+
+/* Video Area */
+.video-part
+    +overlay(#02050A, 0.3)
+    &:before
+        z-index: 1
+    .video-play
+        +abs-middle()
+        z-index: 3
+    .bg-text
+        line-height: 1
+        font-size: 180px
+        font-weight: 800
+        background: radial-gradient(46.77% 292.3% at 11.78% 57.78%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        +poLB(5%, -18%)
+        z-index: -1
+        +res-bl(md)
+            font-size: 120px
+        +res-bl(sm)
+            font-size: 80px
+        +res-bl(xs)
+            font-size: 50px
+    &.style-two
+        &:before
+            opacity: 0.1
+        .video-play
+            color: $color-primary
+            +res-ab(xl)
+                +size(150px)
+                font-size: 25px
+                line-height: 150px
+.video-content-part
+    +res-ab(xl)
+        max-width: 300px
+    .section-title
+        +res-ab(xl)
+            margin-left: -200px
+        h2
+            +res-bt(xl, xxl)
+                font-size: 44px
+    .read-more
+        color: $color-primary
+        
+/* Video Year */
+.video-year
+    line-height: 1
+    font-size: 230px
+    font-weight: 600
+    color: transparent
+    -webkit-text-stroke: 1px
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.2)
+    +res-bl(xl)
+        font-size: 150px
+    +res-bl(sm)
+        font-size: 100px
+    +res-bl(ms)
+        font-size: 80px
+    .leaf-shape
+        max-width: 25%
+        +poRB(-30px, 25%)

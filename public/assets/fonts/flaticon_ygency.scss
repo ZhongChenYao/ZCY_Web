@@ -1,0 +1,109 @@
+$flaticon_ygency-font: "flaticon_ygency";
+
+@font-face {
+    font-family: $flaticon_ygency-font;
+    src: url("./flaticon_ygency.ttf?a4bbcc93120497bb608e4b35faceaf9b") format("truetype"),
+url("./flaticon_ygency.woff?a4bbcc93120497bb608e4b35faceaf9b") format("woff"),
+url("./flaticon_ygency.woff2?a4bbcc93120497bb608e4b35faceaf9b") format("woff2"),
+url("./flaticon_ygency.eot?a4bbcc93120497bb608e4b35faceaf9b#iefix") format("embedded-opentype"),
+url("./flaticon_ygency.svg?a4bbcc93120497bb608e4b35faceaf9b#flaticon_ygency") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_ygency !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_ygency-map: (
+    "star": "\f101",
+    "right-quote": "\f102",
+    "quote": "\f103",
+    "robot-arm": "\f104",
+    "engineering": "\f105",
+    "ai": "\f106",
+    "star-symbol": "\f107",
+    "development": "\f108",
+    "mobile-development": "\f109",
+    "branding": "\f10a",
+    "brainstorming": "\f10b",
+    "ux": "\f10c",
+    "optimization": "\f10d",
+    "goal": "\f10e",
+    "abstract": "\f10f",
+    "liquid": "\f110",
+    "petals": "\f111",
+    "creativity": "\f112",
+    "mobile-banking": "\f113",
+    "optimization-1": "\f114",
+    "software-development": "\f115",
+);
+
+.flaticon-star:before {
+    content: map-get($flaticon_ygency-map, "star");
+}
+.flaticon-right-quote:before {
+    content: map-get($flaticon_ygency-map, "right-quote");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_ygency-map, "quote");
+}
+.flaticon-robot-arm:before {
+    content: map-get($flaticon_ygency-map, "robot-arm");
+}
+.flaticon-engineering:before {
+    content: map-get($flaticon_ygency-map, "engineering");
+}
+.flaticon-ai:before {
+    content: map-get($flaticon_ygency-map, "ai");
+}
+.flaticon-star-symbol:before {
+    content: map-get($flaticon_ygency-map, "star-symbol");
+}
+.flaticon-development:before {
+    content: map-get($flaticon_ygency-map, "development");
+}
+.flaticon-mobile-development:before {
+    content: map-get($flaticon_ygency-map, "mobile-development");
+}
+.flaticon-branding:before {
+    content: map-get($flaticon_ygency-map, "branding");
+}
+.flaticon-brainstorming:before {
+    content: map-get($flaticon_ygency-map, "brainstorming");
+}
+.flaticon-ux:before {
+    content: map-get($flaticon_ygency-map, "ux");
+}
+.flaticon-optimization:before {
+    content: map-get($flaticon_ygency-map, "optimization");
+}
+.flaticon-goal:before {
+    content: map-get($flaticon_ygency-map, "goal");
+}
+.flaticon-abstract:before {
+    content: map-get($flaticon_ygency-map, "abstract");
+}
+.flaticon-liquid:before {
+    content: map-get($flaticon_ygency-map, "liquid");
+}
+.flaticon-petals:before {
+    content: map-get($flaticon_ygency-map, "petals");
+}
+.flaticon-creativity:before {
+    content: map-get($flaticon_ygency-map, "creativity");
+}
+.flaticon-mobile-banking:before {
+    content: map-get($flaticon_ygency-map, "mobile-banking");
+}
+.flaticon-optimization-1:before {
+    content: map-get($flaticon_ygency-map, "optimization-1");
+}
+.flaticon-software-development:before {
+    content: map-get($flaticon_ygency-map, "software-development");
+}

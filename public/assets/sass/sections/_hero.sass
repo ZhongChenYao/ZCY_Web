@@ -1,0 +1,253 @@
+/*******************************************************/
+/******************** ## Hero Area ********************/
+/*******************************************************/
+.hero-area
+    &:after
+        z-index: -1
+        +size(900px)
+        opacity: 0.2
+        border-radius: 50%
+        filter: blur(200px)
+        +poRT(-250px, -130px)
+        background: $color-primary
+        animation: zoomInOut 5s infinite
+
+.hero-bg
+    z-index: -1
+    +poLT(0, 12%)
+    opacity: 0.1
+    max-width: 100%
+    
+.hero-content
+    h1
+        line-height: 1
+        font-size: 180px
+        font-weight: 700
+        position: relative
+        margin-bottom: -85px
+        text-transform: uppercase
+        +res-bl(xxl)
+            font-size: 150px
+        +res-bl(lg)
+            font-size: 115px
+        +res-bl(md)
+            font-size: 85px
+            margin-bottom: -30px
+        +res-bl(ms)
+            font-size: 70px
+        +res-bl(xs)
+            font-size: 50px
+            max-width: 250px
+        span
+            color: transparent
+            -webkit-text-stroke: 1px
+            -webkit-text-stroke-color: white
+            
+.hero-right-image
+    +res-bl(lg)
+        z-index: -1
+        +poRT(3%, 5%)
+        max-width: 30%
+            
+.hero-bottom-image
+    display: flex
+    img
+        max-width: calc(100% - 70px)
+        +res-bl(sm)
+            max-width: calc(100% - 50px)
+.hero-social
+    margin-left: 40px
+    +gapTB(padding, 40px)
+    flex-direction: column
+    transform: rotate(180deg)
+    +flexcenter(space-around)
+    +res-bl(xl)
+        +gapTB(padding, 0)
+    +res-bl(sm)
+        margin-left: 20px
+    a
+        color: $color-secondary
+        text-transform: capitalize
+        -webkit-writing-mode: vertical-lr
+        &:hover
+            color: $color-primary
+            text-decoration: underline
+        i
+            margin-bottom: 5px
+            transform: rotate(90deg)
+        span
+            +res-bl(lg)
+                display: none
+                
+/* Hero Area Two */
+.hero-title
+    line-height: 1
+    font-weight: 700
+    font-size: 150px
+    font-family: $font-primary
+    +res-bl(xxl)
+        font-size: 140px
+    +res-bl(xl)
+        font-size: 110px
+    +res-bl(lg)
+        font-size: 85px
+        line-height: 1.2
+    +res-bl(md)
+        font-size: 60px
+    +res-bl(sm)
+        font-size: 52px
+        line-height: 1.3
+    +res-bl(ms)
+        font-size: 42px
+        line-height: 1.5
+    +res-bl(xs)
+        font-size: 33px
+    .arrow
+        max-width: 40%
+        position: relative
+        display: inline-block
+        &:before
+            content: ''
+            left: 28%
+            +size(130px)
+            position: absolute
+            border-radius: 50%
+            border: 33px solid
+            top: calc(50% - 50px)
+            animation: rotated_circle linear 10s infinite
+            border-color: $color-primary $color-primary transparent transparent
+            +res-bl(lg)
+                +size(100px)
+                border-width: 22px
+            +res-bl(lg)
+                +size(70px)
+                border-width: 15px
+                top: calc(50% - 33px)
+    img
+        border-radius: 50px
+        &.mxw-10
+            max-width: 10%
+        &.mxw-20
+            max-width: 20%
+        &.mxw-40
+            max-width: 40%
+        &.leaf
+            border-radius: 0
+            transform: translateY(-25%)
+    &.style-two
+        display: inline-block
+        +res-ab(lg)
+            font-size: 85px
+            .leaf
+                transform: translateY(-70%)
+        
+.authors-text
+    display: flex
+    align-items: center
+    img
+        flex: none
+        +size(50px)
+        border-radius: 50%
+        margin-right: -20px
+        +res-bl(xs)
+            margin-right: -30px
+    i
+        flex: none
+        margin-right: 20px
+        color: $color-dark
+        +circle($color-primary, 50px)
+    .text
+        font-weight: 600
+        line-height: 1.6
+        
+/* Hero Area Three */
+.hero-three-content
+    max-width: 730px
+    h1
+        margin-bottom: 28px
+        +res-bl(xl)
+            font-size: 66px
+        +res-bl(md)
+            font-size: 50px
+        +res-bl(sm)
+            font-size: 45px
+        +res-bl(ms)
+            font-size: 40px
+        +res-bl(xs)
+            font-size: 35px
+        i
+            font-weight: 400
+            color: $color-primary
+    p
+        color: white
+        font-size: 20px
+        +res-bl(md)
+            font-size: 18px
+        +res-bl(ms)
+            font-size: 16px
+    .read-more
+        margin-top: 15px
+        color: $color-primary
+        
+.hero-three-shape
+    z-index: -1
+    max-width: 20%
+    +poRB(-8%, 75%)
+    animation: 10s zoomInOut infinite
+    img
+        border-radius: 50%
+        
+/* Hero Four */
+.hero-four-content
+    h1
+        font-weight: 700
+        +res-ab(xxl)
+            font-size: 120px
+        +res-bl(md)
+            font-size: 60px
+        +res-bl(sm)
+            font-size: 40px
+        +res-bl(xs)
+            font-size: 35px
+        .marquee-inner
+            span
+                color: transparent
+                -webkit-text-stroke: 1px
+                -webkit-text-stroke-color: white
+                
+    .rotated-man-wrap
+        +abs-middle()
+        max-width: 35%
+        
+.hero-shapes
+    .shape
+        z-index: -1
+        max-width: 5%
+        position: absolute
+        &.one
+            top: 15%
+            left: 25%
+            animation: upDownLeft 30s infinite
+        &.two
+            top: 15%
+            left: 65%
+            animation: down-up-two 10s infinite
+        
+/* Rotated Image */
+.rotated-man
+    z-index: 1
+    +gapLR(padding, 20px)
+    position: relative
+    animation: semi_rotated 10s infinite
+    +res-bl(md)
+        +gapLR(padding, 10px)
+    +res-bl(ms)
+        +gapLR(padding, 5px)
+    &:before
+        content: ''
+        +poLB(0)
+        z-index: -1
+        +size(100%, 94%)
+        background: $color-primary
+        border-radius: 250px 250px 0 0
+        

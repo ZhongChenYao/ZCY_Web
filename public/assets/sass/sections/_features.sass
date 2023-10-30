@@ -1,0 +1,194 @@
+/*******************************************************/
+/****************** ## Features Area *******************/
+/*******************************************************/ 
+/* What We Do */
+.what-we-do-item
+    padding-bottom: 35px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    +res-ab(xs)
+        display: flex
+    &:not(:last-child)
+        margin-bottom: 45px
+    .number
+        flex: none
+        width: 135px
+        margin-bottom: 20px
+        +res-bl(ms)
+            width: 75px
+        span
+            +size(45px)
+            transition: 0.5s
+            font-weight: 600
+            line-height: 45px
+            text-align: center
+            border-radius: 50%
+            display: inline-block
+            border: 1px solid rgba(255, 255, 255, 0.1)
+    .content
+        p
+            opacity: 0.75
+    &:hover
+        border-bottom-color: $color-primary
+        .number
+            span
+                color: black
+                background: $color-primary
+                border-color: $color-primary
+            
+.what-we-do-area
+    &:after
+        z-index: -1
+        +size(900px)
+        opacity: 0.3
+        border-radius: 50%
+        filter: blur(200px)
+        +poRT(-300px, -130px)
+        background: $color-primary
+        animation: zoomInOut 5s infinite
+    &:before
+        z-index: -1
+        content: ''
+        +size(555px)
+        opacity: 0.3
+        +poRB(-100px, 20%)
+        animation: zoomInOut 5s 2s infinite
+        background: url(../images/shapes/circle-lines.png) no-repeat 100% 100%
+        +res-bl(sm)
+            +size(300px)
+            
+/* Why Choose Us */
+.why-choose-item
+    margin-bottom: 50px
+    .why-choose-header
+        display: flex
+        align-items: center
+        padding-bottom: 25px
+        margin-bottom: 25px
+        border-bottom: 2px solid $color-border
+        transition: .3s
+        i
+            font-size: 22px
+            margin-right: 15px
+            color: $color-primary
+        h5
+            margin-bottom: 0
+    &:hover
+        .why-choose-header
+            border-color: white
+        
+    &.style-two
+        .why-choose-header
+            i
+                font-size: 80px
+                margin-right: 20px
+                +res-bl(xs)
+                    font-size: 60px
+            h5
+                +res-ab(xs)
+                    font-size: 22px
+        p
+            color: rgba(255, 255, 255, 0.65)
+            +res-ab(xs)
+                font-size: 18px
+                
+/* Why Choose Us Two */
+.why-choose-two-wrap
+    max-width: 480px
+
+.why-choose-item-two
+    display: flex
+    margin-bottom: 20px
+    .icon
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 30px
+        i
+            +circle($color-primary, 35px)
+            margin-bottom: 20px
+        .icon-bottom-shape
+            height: 80px
+            width: 2px
+            background: linear-gradient(180deg, #55E6A5 0%, rgba(255, 255, 255, 0) 100%)
+    .content
+        h4
+            font-size: 22px
+            margin-bottom: 13px
+                
+/* Features Three */
+.feature-item-three
+    padding-bottom: 35px
+    border-bottom: 2px solid $color-border
+    margin-bottom: 80px
+    transition: .3s
+    .top-part
+        margin-bottom: 28px
+        display: flex
+        justify-content: space-between
+        .serial-number
+            color: rgba(255, 255, 255, 0.1)
+            font-size: 55px
+            font-weight: 300
+            transition: .3s
+        .details-btn
+            +size(85px)
+            background: #0B111A
+            color: $color-primary
+            border: none
+            line-height: 85px
+    .content
+        h4
+            margin-bottom: 20px
+    &:hover
+        border-color: $color-primary
+        .top-part
+            .serial-number
+                color: white
+            .details-btn
+                background: $color-primary
+                color: $color-dark
+        .content
+            h4 a
+                text-decoration: underline
+                text-decoration-thickness: 1px
+                text-underline-offset: 5px
+            
+/* What We Provide */
+.we-provide-item
+    padding: 50px
+    margin-bottom: 30px
+    background: #0A101A
+    +res-bl(lg)
+        +gapLR(padding, 40px)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .serial-number
+        font-size: 20px
+        border: 2px solid $color-primary
+        border-radius: 15px
+        padding: 1px 18px
+        color: white
+        margin-bottom: 30px
+        display: inline-block
+        margin-bottom: 32px
+    h3
+        line-height: 1.4
+        margin-bottom: 25px
+        +res-bl(xs)
+            font-size: 25px
+        span
+            font-style: italic
+            font-weight: 300
+            color: $color-primary
+    .tags
+        display: flex
+        flex-wrap: wrap
+        padding-top: 5px
+        +gapLR(margin, -5px)
+        a
+            flex: 1 1
+            padding: 1px 10px
+            text-align: center
+            margin: 10px 5px 0
+            border-radius: 14px
+            border: 2px solid rgba(255, 255, 255, 0.1)

@@ -1,0 +1,133 @@
+/*******************************************************/
+/***************** ## Sidebar Widgets *****************/
+/*******************************************************/
+.widget
+    &:not(:last-child)
+        margin-bottom: 50px
+        
+.widget-title
+    color: $color-primary
+    margin-bottom: 30px
+    padding-bottom: 25px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+    
+.widget-search
+    .widget-title
+        margin-bottom: 0
+        border-bottom: none
+    form
+        display: flex
+        padding: 0 0 15px
+        align-items: center
+        border-bottom: 1px solid white
+        input
+            padding: 0
+            color: white
+            border: none
+            font-size: 22px
+            background: transparent
+            &::placeholder
+                color: white
+        button
+            flex: none
+            color: white
+            font-size: 20px
+            background: transparent
+            
+.widget-author
+    text-align: center
+    img
+        border-radius: 50%
+        margin-bottom: 33px
+    h5
+        margin-bottom: 15px
+        +res-ab(xs)
+            font-size: 22px
+    p
+        +container(315px)
+        margin-bottom: 25px
+    .social-style-one
+        a
+            font-size: 20px
+            +gapLR(margin, 15px)
+            &:hover
+                color: $color-primary
+            
+.widget-category
+    ul
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 15px
+            span
+                margin-left: 6px
+                transform: translateY(-6px)
+
+.widget-recent-news
+    ul
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 30px
+            .image
+                flex: none
+                max-width: 100px
+                margin-right: 35px
+                +res-bl(xs)
+                    max-width: 70px
+                    margin-right: 15px
+            h5
+                margin-bottom: 0
+                line-height: 1.65
+                font-size: 18px
+                +res-bt(lg, xl)
+                    font-size: 16px
+                +res-bl(xs)
+                    font-size: 15px
+                    line-height: 1.3
+            .date
+                font-size: 14px
+                text-transform: uppercase
+                i
+                    margin-right: 7px
+
+.tag-coulds
+    display: flex
+    flex-wrap: wrap
+    margin: -15px -7.5px 0
+    a
+        font-size: 16px
+        font-weight: 500
+        padding: 7px 22px
+        margin: 15px 7.5px 0
+        background: transparent
+        border: 1px solid $color-border
+        &:hover
+            background: #16161C
+            border-color: #16161C
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    margin: -20px -10px 0
+    a
+        margin: 20px 10px 0
+        +overlay(#000000, 0)
+        max-width: calc(33.333% - 20px)
+        &:before
+            z-index: 1
+            transition: 0.5s
+        i
+            z-index: 2
+            +poLT(50%)
+            opacity: 0
+            font-size: 20px
+            transition: 0.5s
+            transform: translate(-50%, -50%) rotate(-45deg)
+        &:hover
+            &:before
+                opacity: 0.75
+            i
+                opacity: 1

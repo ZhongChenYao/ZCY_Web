@@ -1,0 +1,66 @@
+/*******************************************************/
+/******************** ## FAQs Area *********************/
+/*******************************************************/
+.accordion-item
+    background: transparent
+    &:not(:last-child)
+        margin-bottom: 15px
+    .accordion-header
+        padding-bottom: 18px
+        margin-bottom: 22px
+        border-bottom: 1px solid $color-border
+    .accordion-button
+        background: transparent
+        font-size: 20px
+        padding: 0
+        color: white
+        +res-bl(xs)
+            font-size: 18px
+        &:focus
+            box-shadow: none
+        &:after
+            color: $color-primary
+            font-size: 18px
+            background: none
+            content: "\f061"
+            font-family: "Font Awesome 5 Pro"
+        &:not(.collapsed):after
+            transform: rotate(90deg)
+    .accordion-body
+        padding: 0
+        p
+            margin-bottom: 10px
+            font-size: 18px
+            color: rgba(255, 255, 255, 0.65)
+            
+.faq-shapes
+    .shape
+        z-index: -1
+        max-width: 10%
+        position: absolute
+        animation: rotated_circle 10s linear infinite
+        &.left
+            left: 5%
+            top: 25%
+        &.right
+            right: 5%
+            bottom: 35%
+            
+/* FAQ Four */
+.faq-four-iamge
+    z-index: 1
+    position: relative
+    display: inline-block
+    animation: semi_rotated 10s infinite
+    img
+        border-radius: 250px 250px 0 0
+    &:before
+        content: ''
+        z-index: -1
+        width: 135%
+        opacity: 0.1
+        +poLB(50%, -8%)
+        background: white
+        padding-bottom: 135%
+        border-radius: 50%
+        transform: translate(-50%)

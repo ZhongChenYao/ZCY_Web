@@ -1,0 +1,203 @@
+/*******************************************************/
+/****************** ## Contact Forms ******************/
+/*******************************************************/
+.form-style-one
+    .form-group
+        margin-bottom: 50px
+        label
+            +poLT(0)
+            color: white
+            font-size: 18px
+    .nice-select,
+    .form-control
+        color: white
+        font-size: 18px
+        font-weight: 500
+        border-radius: 0
+        border-style: solid
+        border-width: 0 0 1px
+        padding: 1px 0 20px 33px
+        background: transparent
+        border-color: rgba(255, 255, 255, 0.1)
+        &::placeholder
+            color: white
+        &:focus
+            border-color: $color-secondary
+    .nice-select
+        line-height: 1.5
+        &:after
+            left: 0
+            top: 12px
+            +size(10px)
+        .list
+            background: #222222
+            .selected,
+            .option:hover
+                background: #333333
+                
+.form-style-two
+    background: #0A1019
+    padding: 40px 50px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .form-group
+        margin-bottom: 35px
+    .nice-select,
+    .form-control
+        color: white
+        font-weight: 500
+        border-radius: 0
+        border-style: solid
+        border-width: 0 0 1px
+        padding: 1px 0 15px
+        background: transparent
+        border-color: rgba(255, 255, 255, 0.1)
+        &:focus
+            border-color: $color-secondary
+    .nice-select
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+        color: $color-body
+        &:after
+            right: 0
+            top: 12px
+        .current
+            font-weight: 400
+            color: $color-body
+        .list
+            background: #222222
+            .selected,
+            .option:hover
+                background: #333333
+        
+.drop-me-image-part
+    &:after
+        content: ''
+        z-index: -1
+        width: 115%
+        +poLB(50%, -8%)
+        background: #0A1019
+        padding-bottom: 115%
+        border-radius: 50%
+        transform: translate(-50%)
+                
+.contact-form
+    box-shadow: 10px 0 60px rgba(102, 83, 232, 0.1)
+    +res-bl(ms)
+        +gapLR(padding, 25px)
+.contact-info-part
+    max-width: 415px
+    padding: 40px 60px
+    +res-bl(ms)
+        +gapLR(padding, 25px)
+        
+.contact-info-item
+    display: flex
+    align-items: center
+    .icon
+        flex: none
+        font-size: 20px
+        color: $color-dark
+        margin-right: 25px
+        +circle($color-primary, 60px)
+    .content
+        .title
+            color: white
+            display: block
+    &:not(:last-child)
+        margin-bottom: 35px
+    
+/* Contact Info Box */
+.contact-info-box
+    transition: 0.5s
+    background: white
+    margin-bottom: 30px
+    padding: 50px 40px 45px
+    border: 1px solid $color-border
+    +res-ab(xs)
+        font-size: 18px
+    .icon
+        font-size: 55px
+        margin-bottom: 30px
+        color: $color-primary
+        +res-bl(xs)
+            font-size: 40px
+    h4
+        margin-bottom: 15px
+        +res-ab(xs)
+            font-size: 24px
+    > a,
+    > span
+        display: inline-block
+    > b
+        font-weight: 500
+        color: $color-primary
+    &:hover
+        border-color: white
+        box-shadow: $box-shadow
+    
+/* Location Map */
+.our-location
+    iframe
+        height: 720px
+        +res-bl(xxl)
+            height: 600px
+        +res-bl(lg)
+            height: 500px
+        +res-bl(sm)
+            height: 400px
+        
+/* Contact Page Form */
+.our-location-address
+    .social-style-two
+        a
+            +size(40px)
+            border: none
+            line-height: 40px
+            background: rgba(255, 255, 255, 0.1)
+            &:hover
+                background: $color-primary
+            
+.our-location-address
+    color: white
+    h5
+        margin-bottom: 25px
+        padding-bottom: 25px
+        border-bottom: 1px solid white
+        +res-ab(xs)
+            font-size: 22px
+    .mailto
+        color: $color-primary
+    .callto
+        color: white
+        align-items: center
+        display: inline-flex
+        i
+            font-size: 12px
+            color: $color-dark
+            margin-right: 10px
+            +circle($color-primary, 30px)
+            
+.contact-page-form
+    padding: 60px
+    background: #0A1019
+    +res-bl(ms)
+        +gapLR(padding, 35px)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .form-group
+        margin-bottom: 30px
+        label,
+        .form-control
+            font-size: 16px
+    
+/* Contact Form Validation */
+.has-error
+    .with-errors
+        color: red
+        margin-top: 5px
+        margin-bottom: -15px
+#msgSubmit
+    margin-bottom: 0
+    margin-top: 10px

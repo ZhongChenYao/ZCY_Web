@@ -1,0 +1,106 @@
+/*******************************************************/
+/******************* ## Counter Area *******************/
+/*******************************************************/
+.counter-item
+    margin-bottom: 50px
+    > i
+        line-height: 1
+        font-size: 22px
+        margin-bottom: 15px
+        display: inline-block
+        color: $color-primary
+    .count-text
+        display: block
+        line-height: 1
+        font-size: 120px
+        transition: 0.25s
+        font-weight: 700
+        color: transparent
+        margin-bottom: 15px
+        -webkit-text-stroke: 1px
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.2)
+        +res-bl(xs)
+            font-size: 85px
+    .counter-title
+        font-size: 18px
+        font-weight: 500
+    &:hover
+        .count-text
+            color: $color-primary
+            -webkit-text-stroke-color: $color-primary
+    &.style-two
+        transition: 0.5s
+        padding: 60px 70px
+        height: calc(100% - 50px)
+        border-left: 1px solid rgba(255, 255, 255, 0.1)
+        +res-bl(md)
+            padding: 30px
+        &.bordered-top
+            border-top: 1px solid rgba(255, 255, 255, 0.1)
+        &.bordered-bottom
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+        &.bordered-right
+            border-right: 1px solid rgba(255, 255, 255, 0.1)
+        &:hover
+            border-color: $color-primary
+            
+        
+.count-text
+    &.k:after
+        content: 'k'
+    &.plus:after
+        content: '+'
+    &.percent:after
+        content: '%'
+        
+/* Counter style Two */
+.counter-item-two
+    margin-bottom: 30px
+    color: $color-secondary
+    .count-text
+        display: block
+        line-height: 1
+        font-size: 48px
+        font-weight: 600
+        margin-bottom: 5px
+        
+/* Counter with Circle Progress */
+.circle-progress-item
+    text-align: center
+    margin-bottom: 40px
+    h5
+        margin-top: 15px
+        margin-bottom: 8px
+        
+/* Skill Area */
+.skill-content
+    p
+        +res-ab(sm)
+            font-size: 18px
+            
+/* Counter Three */
+.counter-section-three
+    background: #0A1019
+    
+.counter-item-three
+    display: flex
+    margin-bottom: 50px
+    align-items: center
+    +res-bl(ms)
+        flex-wrap: wrap
+    > i
+        line-height: 1
+        font-size: 45px
+        margin-right: 25px
+        color: $color-primary
+    .count-text
+        font-size: 80px
+        font-weight: 600
+        margin-right: 25px
+        line-height: 1
+        color: white
+        +res-bl(xs)
+            font-size: 60px
+    .counter-title
+        +res-ab(ms)
+            max-width: 130px

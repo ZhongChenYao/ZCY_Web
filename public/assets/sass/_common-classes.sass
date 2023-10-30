@@ -1,0 +1,599 @@
+/*******************************************************/
+/******************  ## Common Classes *****************/
+/*******************************************************/
+.page-wrapper
+    position: relative
+    z-index: 9
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+    min-width: 300px
+    
+.container
+    +res-ab(xl)
+        max-width: $container
+        padding-left: $gutter/2
+        padding-right: $gutter/2
+        &.container-1620
+            max-width: 1650px
+        &.container-1590
+            max-width: 1620px
+        &.container-1290
+            max-width: 1320px
+        &.container-1260
+            max-width: 1290px
+        &.container-1210
+            max-width: 1240px
+        
+.container-fluid
+    +res-ab(sm)
+        +gapLR(padding, 25px)
+    +res-ab(xxl)
+        +gapLR(padding, 70px)
+      
+.col-small
+    +res-bl(xs)
+        flex: 0 0 100%
+        max-width: 100%
+.row
+    --bs-gutter-x: 30px
+    
+.no-gap
+    --bs-gutter-x: 0
+    
+@for $i from 1 through 15
+    .gap-#{10 * $i}
+        +res-ab(xxl)
+            --bs-gutter-x: #{10px * $i}
+        
+.row-cols-xl-7
+    > *
+        +res-ab(xl)
+            width: 14.2857%
+            flex: 0 0 auto
+    
+/** Section Title style **/
+.section-title
+    margin-top: -7px
+    position: relative
+    .sub-title
+        font-size: 18px
+        font-weight: 500
+        align-items: center
+        display: inline-flex
+        color: $color-primary
+        text-transform: capitalize
+        &:before
+            content: ''
+            +size(36px, 10px)
+            margin-right: 10px
+            background: url(../images/icons/sub-title.svg) no-repeat 100% 100%
+    h2
+        text-transform: capitalize
+        +res-bl(md)
+            font-size: 40px
+        +res-bl(sm)
+            font-size: 35px
+        +res-bl(xs)
+            font-size: 33px
+        i
+            color: $color-primary
+    &.style-two
+        h2
+            background: radial-gradient(87.11% 3413.79% at 16.45% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            i
+                font-weight: 400
+                -webkit-text-fill-color: $color-primary
+            
+            
+/* Big Text */
+.big-text
+    color: white
+    display: block
+    font-size: 10vw
+    font-weight: 500
+    text-align: center
+    &.light-opacity
+        z-index: -1
+        opacity: 0.03
+        position: relative
+        margin-top: -100px
+
+   
+/** Button style **/
+.theme-btn,
+a.theme-btn
+    cursor: pointer
+    transition: 0.5s
+    font-weight: 600
+    text-align: center
+    padding: 13px 35px
+    align-items: center
+    display: inline-flex
+    background: transparent
+    color: $color-secondary
+    justify-content: center
+    text-transform: capitalize
+    border: 1px solid $color-border
+    i
+        transition: 0.25s
+        margin-left: 10px
+        transform: rotate(-45deg)
+    &:hover
+        color: $color-dark
+        background: $color-primary
+        border-color: $color-primary
+        i
+            margin-left: 13px;
+            margin-right: -3px
+    +res-bl(sm)
+        padding: 10px 25px
+    &.style-two
+        color: $color-dark
+        background: $color-primary
+        border-color: $color-primary
+        &:hover
+            color: $color-primary
+            background: transparent
+    &.style-three
+        font-size: 24px
+        font-weight: 400
+        border-radius: 30px
+        text-transform: lowercase
+        +res-ab(lg)
+            padding: 18px 50px
+
+/* Details Btn */
+.details-btn
+    +size(100px)
+    font-size: 24px
+    text-align: center
+    line-height: 100px
+    border-radius: 50%
+    display: inline-block
+    color: $color-secondary
+    transform: rotate(-45deg)
+    border: 1px solid $color-border
+    &:hover
+        color: white
+        background: $color-primary
+        border-color: $color-primary
+    +res-bl(ms)
+        +size(65px)
+        font-size: 16px
+        line-height: 65px
+
+/* Explore Btn */
+.explore-more
+    +size(165px)
+    font-size: 18px
+    color: $color-dark
+    border-radius: 50%
+    display: inline-flex
+    padding: 35px 44px 25px
+    justify-content: center
+    flex-direction: column
+    background: $color-primary
+    i
+        text-align: center
+        transform: rotate(-45deg) translate(-10px, -20px)
+    span
+        font-weight: 600
+        line-height: 1.5
+    
+    +res-bl(ms)
+        +size(100px)
+        font-size: 14px
+        padding: 15px 20px
+        i
+            transform: rotate(-45deg) translate(-10px, -15px)
+        span
+            line-height: 1.2
+
+/* Read More */
+.read-more
+    font-weight: 500
+    align-items: center
+    display: inline-flex
+    text-decoration: underline
+    text-transform: capitalize
+    text-underline-position: under
+    i
+        float: right
+        font-weight: 400
+        transition: 0.5s
+        margin-left: 8px
+        transform: rotate(-45deg)
+    &:hover
+        color: $color-primary
+        text-decoration: underline
+        i
+            margin-left: 13px
+    &.style-two
+        position: relative
+        padding-right: 28px
+        span
+            opacity: 0
+            transition: 0.5s
+            transform: translate(20px)
+        i
+            left: 0
+            margin-left: 0
+            font-size: 22px
+            position: absolute
+        &:hover
+            span
+                opacity: 1
+                transform: translate(0)
+            i
+                font-size: 16px
+                margin-left: 13px
+                left: calc(100% - 28px)
+    &.color-primary
+        color: $color-primary
+      
+/* List style One */
+.list-style-one
+    li
+        display: flex
+        font-weight: 500
+        color: $color-secondary
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:before
+            flex: none
+            +size(20px)
+            font-size: 11px
+            margin-top: 6px
+            content: "\f00c"
+            font-weight: 600
+            line-height: 16px
+            border: 2px solid
+            text-align: center
+            margin-right: 12px
+            border-radius: 50%
+            color: $color-primary
+            font-family: 'Font Awesome 5 Pro'
+        
+/* List style Two */
+.list-style-two
+    li
+        font-size: 18px
+        &:not(:last-child)
+            margin-bottom: 8px
+        a
+            &:hover
+                color: $color-primary
+                text-decoration: underline
+                text-underline-position: under
+            
+/* List style Three */
+.list-style-three
+    color: white
+    li
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:before
+            content: "\f560"
+            font-size: 1.2em
+            margin-right: 15px
+            color: $color-primary
+            font-family: 'Font Awesome 5 Pro'
+        
+/** Social Link One **/
+.social-style-one
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -10px)
+    a
+        +gapLR(margin, 10px)
+        
+/** Social Link Two **/
+.social-style-two
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -5px)
+    a
+        +gapLR(margin, 5px)
+        +circle(transparent, 35px)
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        &:hover
+            color: $color-dark
+            background: $color-primary
+        
+/** Social Link Three **/
+.social-style-three
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -7.5px)
+    a
+        +gapLR(margin, 7.5px)
+        &:hover
+            color: $color-primary
+        
+/** Social Link Four **/
+.social-style-four
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -35px)
+    a
+        +gapLR(margin, 35px)
+        i
+            margin-right: 10px
+        
+/** Tab Style One **/
+.tab-style-one
+    border-bottom: 1px solid $color-border
+    .nav-link
+        font-size: 18px
+        border-radius: 0
+        @extend %heading
+        +gapLR(padding, 0)
+        margin-bottom: -1px
+        background: transparent
+        border-bottom: 2px solid transparent
+        +res-ab(xl)
+            padding-bottom: 25px
+        +res-bl(sm)
+            font-size: 16px
+        &.active
+            color: $color-primary
+            border-bottom-color: $color-primary
+    .nav-item
+        &:not(:last-child)
+            margin-right: 40px
+            +res-bl(md)
+                margin-right: 20px
+        
+/*** Preloader style ** */
+.preloader
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9999999
+    +flexcenter(center)
+    background-color: $color-dark
+    background-repeat: no-repeat
+    background-position: center center
+    .custom-loader
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        background-color: transparent
+        border: 2px solid white
+        border-top: 2px solid $color-primary
+        border-bottom: 2px solid $color-primary
+        -webkit-animation: 1s preloader linear infinite
+        animation: 1s preloader linear infinite
+
+/* Pagination */    
+.pagination
+    align-items: center
+    +gapLR(margin, -5px)
+    li
+        margin: 10px 5px 0
+        a,
+        .page-link
+            padding: 0
+            color: white
+            border: none
+            box-shadow: none
+            font-weight: 600
+            +circle(#0A1019, 60px)
+        &.disabled,
+        &:last-child
+            .page-link
+                background: #0A1019
+                border-radius: 50%
+        &.active,
+        &:hover:not(.disabled)
+            .page-link
+                color: $color-dark
+                background: $color-primary
+                border-color: $color-primary
+        &:first-child,
+        &:last-child
+            .page-link
+                color: $color-primary
+        &.dot
+            +size(7px)
+            background: white
+            border-radius: 50%
+        
+/* Rating */
+.ratting
+    line-height: 1
+    align-items: center
+    display: inline-flex
+    i
+        margin: 3px
+        color: #f1b000
+        font-size: 14px
+    &.style-two
+        i
+            margin: 6px
+            font-size: 18px
+            color: $color-primary
+        
+    
+.slider-arrow
+    .slick-arrow
+        border: 1px solid $color-border
+        &:not(:last-child)
+            margin-right: 5px
+        &:focus,
+        &:hover
+            color: white
+            background: $color-primary
+            border-color: $color-primary
+                
+/*** Slick Dots ***/
+.slick-dots
+    flex-wrap: wrap
+    +flexcenter(center)
+    li
+        position: relative
+        cursor: pointer
+        +size(7px)
+        transition: 0.5s
+        margin: 0 10px
+        border-radius: 50%
+        background: rgba(255, 255, 255, .65)
+        button
+            opacity: 0
+        &.slick-active
+            background: white
+
+/*** Scroll Top style ***/
+.scroll-top
+    position: fixed
+    bottom: 25px
+    right: 0
+    +size(40px)
+    z-index: 99
+    display: none
+    font-size: 14px
+    cursor: pointer
+    line-height: 40px
+    border-radius: 5px
+    background: $color-primary
+    animation: pulse 2s infinite
+  
+/* Text White */
+.text-white
+    *, a,
+    .sub-title,
+    .read-more,
+    .list-style-one li,
+    .list-style-one li:before,
+    .counter-text-wrap .count-text,
+    .hotline .content a:not(:hover)
+        color: white
+    .service-two-item
+        .icon
+            i
+                color: $color-primary
+        .content
+            p
+                opacity: 0.6
+    .hotline > i
+        background: white
+    .hotline > i
+        border-color: white
+        
+/* Wave Shapes */
+.wave-shapes
+    position: absolute
+    z-index: -1
+    top: 0
+    left: -100px
+    +size(calc(100% + 100px), 100%)
+    .shape
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        animation: leftRightOne 6s infinite
+        &.two
+            animation-delay: 3s
+        
+/*Project Filter*/
+.filter-btns-one
+    display: flex
+    flex-wrap: wrap
+    +gapLR(margin, -5px)
+    li
+        cursor: pointer
+        transition: 0.5s
+        font-weight: 500
+        padding: 4px 20px
+        border-radius: 5px
+        margin: 0 5px 10px
+        color: $color-secondary
+        +res-bl(xs)
+            +gapLR(padding, 15px)
+        &.current
+            background: white
+            color: $color-primary
+            text-decoration: underline
+            box-shadow: 10px 0 60px rgba(195, 195, 195, 0.5)
+            
+.filter-btns-two
+    display: flex
+    flex-wrap: wrap
+    font-weight: 500
+    +gapLR(margin, -18px)
+    +res-ab(md)
+        font-size: 18px
+    +res-bl(sm)
+        +gapLR(margin, -8px)
+    li
+        cursor: pointer
+        transition: 0.5s
+        margin: 0 18px 10px
+        border-bottom: 3px solid transparent
+        +res-bl(sm)
+            +gapLR(margin, 8px)
+        &.current
+            color: $color-primary
+            border-color: $color-primary
+
+/* Position */
+.rel
+    position: relative
+    
+@for $i from 0 through 5
+    .z-#{0 + $i}
+        z-index: 0 + $i
+    
+.overlay
+    +overlay($color-secondary, 0.75)
+    
+/* Backgruond Size */
+.bgs-cover
+    background-size: cover
+    background-position: center
+    
+/* Color + Background */
+.bgc-black
+    background-color: #0f1425
+.bgc-gray
+    background-color: $color-secondary
+.bgc-primary
+    background-color: $color-primary
+.bgc-secondary
+    background-color: $color-primary
+.bgc-lighter
+    background-color: $color-tertiary
+.color-secondary
+    color: $color-primary
+.bgc-black-with-lighting
+    background: #1e1e22
+    &:after,
+    &:before
+        position: absolute
+        +size(450px)
+        z-index: -1
+        content: ''
+        border-radius: 50%
+        background: $color-primary
+        animation: zoomInOut 5s infinite
+    &:after
+        right: -8%
+        top: -15%
+        filter: blur(110px)
+    &:before
+        left: -10%
+        top: 20%
+        filter: blur(350px)
+        animation-delay: 2.5s
+    
+/* Border Radius */
+@for $i from 1 through 6
+    .br-#{5 * $i}
+        border-radius: 5px * $i
+    

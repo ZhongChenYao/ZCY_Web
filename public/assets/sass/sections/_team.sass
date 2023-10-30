@@ -1,0 +1,78 @@
+/*******************************************************/
+/******************* ## Team Member ********************/
+/*******************************************************/ 
+.team-member
+    position: relative
+    margin-bottom: 30px
+    .image
+        margin-bottom: 30px
+        img
+            width: 100%
+    .btn-social
+        z-index: 1
+        opacity: 0
+        width: 100%
+        +poLB(0, -5px)
+        transition: 1s
+        background: black
+        .read-more
+            color: $color-primary
+            i
+                margin-left: 10px
+        .social-style-two
+            display: flex
+            margin-top: 10px
+    .content
+        transition: 1s
+        position: relative
+        padding-right: 30px
+        h4
+            font-size: 22px
+        .read-more
+            +poRT(0, 15px)
+            font-size: 30px
+            i
+                font-weight: 300
+    &:hover
+        .btn-social
+            opacity: 1
+        .content
+            opacity: 0
+    &.style-two
+        margin-bottom: 60px
+        .content
+            +res-ab(xl)
+                padding-left: 30px
+                padding-right: 60px
+                .read-more
+                    right: 30px
+        .btn-social
+            +res-ab(xl)
+                +gapLR(padding, 30px)
+                
+/* Team Page */
+.team-page-area
+    background-repeat: repeat-x
+    
+/* Team Details */
+.team-profile-content
+    h2
+        margin-bottom: 20px
+        +res-ab(xl)
+            font-size: 65px
+        +res-bl(md)
+            font-size: 40px
+        +res-bl(sm)
+            font-size: 35px
+        +res-bl(xs)
+            font-size: 30px
+    .designation
+        display: block
+        font-size: 24px
+        margin-bottom: 50px
+        +res-bl(sm)
+            font-size: 20px
+            margin-bottom: 35px
+    p
+        +res-ab(xs)
+            font-size: 18px

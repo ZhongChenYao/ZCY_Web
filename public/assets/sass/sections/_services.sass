@@ -1,0 +1,259 @@
+/*******************************************************/
+/****************** ## Service Area ********************/
+/*******************************************************/
+.service-item
+    transition: 0.5s
+    margin-bottom: 30px
+    padding: 50px 50px 30px
+    background-color: #0A1019
+    +res-bl(md)
+        margin-top: 0
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .icon
+        line-height: 1
+        font-size: 30px
+        transition: 0.5s
+        margin-bottom: 30px
+        color: $color-primary
+    h5
+        transition: 0.5s
+        margin-bottom: 20px
+    p
+        transition: 0.5s
+    &:hover
+        background-color: $color-primary
+        p, h5, h5 a, .icon
+            color: $color-dark
+        
+    &.style-two
+        padding-top: 40px
+        text-align: center
+        padding-bottom: 35px
+        +res-ab(xs)
+            +gapLR(padding, 40px)
+        .icon
+            font-size: 35px
+            margin-bottom: 25px
+        h5
+            +res-ab(xs)
+                font-size: 22px
+        .read-more
+            padding-right: 0
+            i
+                left: 50%
+                transform: rotate(-45deg) translate(-50%)
+            &:hover
+                i
+                    left: calc(100% - 20px)
+                    transform: rotate(-45deg) translate(0)
+                span
+                    transform: translate(-20px)
+        &:hover
+            background-image: url(../images/services/service-bg.png)
+            .read-more
+                color: $color-dark
+            
+    &.style-three
+        border: 2px solid #0A1019
+        +res-ab(xs)
+            +gapLR(padding, 40px)
+        .icon
+            font-size: 60px
+        h4
+            margin-bottom: 18px
+            +res-bl(ms)
+                font-size: 20px
+            a:hover
+                text-decoration: underline
+        &:hover
+            background: #0A1019
+            border-color: $color-primary
+            .icon
+                color: $color-primary
+            p
+                color: $color-body
+            
+/* Service Style Three */
+.service-three-item
+    display: flex
+    transition: 0.5s
+    margin-bottom: 30px
+    background: #0A1019
+    flex-direction: column
+    padding: 35px 35px 30px
+    height: calc(100% - 30px)
+    justify-content: space-between
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .title-icon
+        display: flex
+        margin-bottom: 40px
+        align-items: flex-start
+        justify-content: space-between
+        h5
+            max-width: 60%
+    &:hover
+        box-shadow: 0px 4px 60px rgba(85, 230, 165, 0.2)
+    
+.service-three-area
+    &:after
+        z-index: -1
+        +size(900px)
+        opacity: 0.2
+        border-radius: 50%
+        filter: blur(200px)
+        +poLB(-300px, -400px)
+        background: $color-primary
+        animation: zoomInOut 5s infinite
+            
+/* Service Style Four */
+.service-four-item
+    z-index: 1
+    padding: 10px
+    display: flex
+    transition: 0.5s
+    position: relative
+    background: #0A1019
+    margin-bottom: 30px
+    flex-direction: column
+    height: calc(100% - 30px)
+    justify-content: space-between
+    .content
+        height: 100%
+        padding: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        h5
+            margin-bottom: 0
+            margin-top: 18px
+    .icon-btn
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        > i
+            line-height: 1
+            font-size: 60px
+            transition: 0.5s
+            color: $color-primary
+        .more-btn
+            +size(50px)
+            line-height: 50px
+            text-align: center
+            background: black
+            color: $color-primary
+            transform: translate(30px, -30px)
+            > i
+                transform: rotate(-45deg)
+    .image
+        img
+            width: 100%
+    &:after,
+    &:before
+        content: ''
+        z-index: -1
+        +size(110px)
+        transition: 0.5s
+        +poRT(30px, 35px)
+        border-radius: 50%
+    &:before
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%)
+    &:after
+        opacity: 0
+        background: linear-gradient(180deg, rgba(9, 9, 9, 0.2) 0%, rgba(255, 255, 255, 0) 100%)
+    
+    &:hover
+        background: $color-primary
+        .content
+            h5 a,
+            .icon-btn > i
+                color: $color-dark
+        &:before
+            opacity: 0
+        &:after
+            opacity: 1
+        
+/* Why Choose Us */
+.why-choose-right
+    position: relative
+    max-width: max-content
+    +res-ab(xl)
+        margin-left: auto
+    .why-choose-border-shape
+        +poLT(0)
+        +size(100%)
+        border: 100px solid $color-primary
+        border-radius: 50%
+        z-index: -1
+        +res-bl(ms)
+            border-width: 60px
+    .text-shape
+        +poRT(2.5%, 8.5%)
+        width: 44%
+    &.style-two
+        +res-bl(lb)
+            margin-left: 0
+        .why-choose-border-shape
+            padding-bottom: 66%
+            height: auto
+            width: 110%
+            right: -34%
+            top: 50%
+            left: auto
+            z-index: 1
+            transform: translateY(-50%) rotate(46deg)
+            border-color: $color-primary $color-primary transparent transparent
+            +res-bl(md)
+                right: -5%
+            +res-bl(ms)
+                right: 0
+                padding-bottom: 82%
+            +res-bl(xs)
+                padding-bottom: 72%
+        .text-shape
+            top: 50%
+            width: 48%
+            right: -30%
+            z-index: 2
+            transform: translateY(-50%)
+            +res-bl(md)
+                right: 0
+                
+.why-choose-left-content
+    h5
+        +res-ab(xs)
+            font-size: 22px
+        
+/* Service Details */
+.service-about-image
+    padding-bottom: 15%
+    padding-right: 15%
+
+.service-about-box
+    max-width: 70%
+    padding: 50px 60px
+    +poRB(0)
+    +res-bl(xl)
+        +gapLR(padding, 50px)
+    +res-bl(ms)
+        padding: 30px 25px
+    +res-bl(xs)
+        max-width: 85%
+    .read-more
+        font-size: 55px
+        margin-left: -10px
+        color: $color-dark
+        margin-bottom: 30px
+        +res-bl(ms)
+            font-size: 35px
+        i
+            font-weight: 300
+    h3
+        margin-bottom: 0
+        +res-ab(xl)
+            font-size: 35px
+        +res-bl(ms)
+            font-size: 25px
+        a
+            color: $color-dark

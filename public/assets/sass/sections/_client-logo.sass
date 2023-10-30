@@ -1,0 +1,19 @@
+/*******************************************************/
+/**************** ## Client Logo Area ******************/
+/*******************************************************/ 
+.client-logo-wrap
+    +gapLR(margin, -30px)
+    +flexcenter(space-between)
+    +res-bl(xl)
+        flex-wrap: wrap
+        justify-content: center
+    .client-logo-item
+        max-width: 40%
+        margin: 0 30px 30px
+        filter: grayscale(1) opacity(0.2)
+        &:hover
+            filter: grayscale(0) opacity(1)
+        
+.client-text
+    +res-ab(ms)
+        font-size: 18px

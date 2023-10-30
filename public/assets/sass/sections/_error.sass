@@ -1,0 +1,24 @@
+/*******************************************************/
+/******************** ## Error Area ********************/
+/*******************************************************/
+.error-header
+    &.fixed-header
+        .header-inner
+            +gapTB(padding, 10px)
+            
+.error-section
+    min-height: 100vh
+    
+.error-content
+    h1
+        margin-bottom: 20px
+        +res-ab(xl)
+            font-size: 100px
+        +res-bl(md)
+            font-size: 60px
+        +res-bl(xs)
+            font-size: 50px
+            
+.error-image
+    +res-ab(xxl)
+        margin-right: -150px

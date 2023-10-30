@@ -1,0 +1,368 @@
+/*******************************************************/
+/******************* ## Header style ******************/
+/*******************************************************/
+.main-header
+    position: relative
+    left: 0px
+    top: 0px
+    z-index: 999
+    width: 100%
+    transition: all 500ms ease
+    .header-upper
+        z-index: 5
+        width: 100%
+        position: relative
+        transition: all 500ms ease
+    .logo-outer
+        flex: none
+        +res-bl(lg)
+            display: none
+    .logo
+        z-index: 9
+        padding: 2px 0
+        position: relative
+    &.menu-absolute
+        .header-upper
+            position: absolute
+    &.fixed-header
+        .header-upper
+            top: 0
+            left: 0
+            position: fixed
+            background: #222222
+            animation: sticky  1s
+            box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10)
+        .main-menu
+            .navbar-collapse
+                > ul
+                    > li
+                        +res-ab(lg)
+                            +gapTB(padding, 25px)
+    
+.nav-outer
+    +res-bl(lg)
+        width: 100%
+ 
+/** Header Main Menu **/
+.main-menu
+    +res-bl(lg)
+        width: 100%
+    .mobile-logo
+        margin-right: auto
+        +res-bl(sm)
+            max-width: 150px
+    .collapse
+        +res-bl(lg)
+            overflow: auto
+    .navbar-collapse
+        padding: 0px
+        > ul
+            display: flex
+            +res-bl(lg)
+                display: block
+                padding: 25px 0
+                background: #222222
+                > li:last-child
+                    border-bottom: 1px solid $color-border
+            +res-ab(lg)
+                > li > a
+                    &:before
+                        opacity: 0
+                        content: "\f061"
+                        +poLT(50%, 85%)
+                        font-weight: 300
+                        font-size: 0.8em
+                        transition: 0.35s
+                        font-family: 'Font Awesome 5 Pro'
+                        color: var(--ygency-primary-color)
+                        transform: translateX(-50%) rotate(-45deg)
+                    &:hover
+                        &:before
+                            opacity: 1
+        +res-bl(lg)
+            left: 0
+            width: 100%
+            position: absolute
+            max-height: calc(100vh - 80px)
+        li
+            padding: 35px 30px
+            +flexcenter(space-between)
+            +res-bl(xxl)
+                +gapLR(padding, 15px)
+            +res-bl(lg)
+                display: block
+                padding: 0 15px
+                border-top: 1px solid $color-border
+            &.dropdown .dropdown-btn
+                cursor: pointer
+                font-size: 12px
+                margin-left: 5px
+                color: $color-secondary
+                +res-bl(lg)
+                    position: absolute
+                    right: 10px
+                    top: 0
+                    width: 50px
+                    height: 43px
+                    border-left: 1px solid $color-border
+                    text-align: center
+                    line-height: 43px
+            a
+                display: block
+                opacity: 1
+                font-weight: 600
+                position: relative
+                color: $color-secondary
+                font-family: $font-secondary
+                text-transform: capitalize
+                transition: all 500ms ease
+                +res-ab(xs)
+                    font-size: 18px
+                +res-bl(lg)
+                    padding: 10px 10px
+                    line-height: 22px
+                &:hover
+                    color: $color-primary
+                    text-decoration: underline
+            &.current > a, &.current-menu-item > a
+                font-weight: 500
+            li
+                border-top: 1px solid $color-border
+                a
+                    text-transform: capitalize
+                    &:before
+                        display: none
+            .megamenu
+                position: absolute
+                left: 0px
+                top: 100%
+                width: 100%
+                z-index: 100
+                display: none
+                padding: 20px 0
+                background: #ffffff
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +clearfix
+                +res-bl(lg)
+                    position: relative
+                    box-shadow: none
+                    width: 100%
+                    .container
+                        max-width: 100%
+                    .row
+                        margin: 0px
+                ul
+                    display: block
+                    position: relative
+                    top: 0
+                    width: 100%
+                    box-shadow: none
+            ul
+                position: absolute
+                left: inherit
+                top: 100%
+                min-width: 250px
+                z-index: 100
+                display: none
+                background: #333333
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05)
+                +res-bl(lg)
+                    position: relative
+                    display: none
+                    width: 100%
+                    box-shadow: none
+                    background: transparent
+                    +clearfix
+                    +res-bl(xs)
+                        min-width: auto
+                li
+                    width: 100%
+                    padding: 7px 20px
+                    +res-bl(lg)
+                        padding: 0 15px
+                    ul
+                        left: 100%
+                        top: 0%
+                        +res-bl(lg)
+                            left: auto
+
+    .navbar-header
+        display: none
+        +res-bl(lg)
+            +flexcenter(start)
+        .navbar-toggle
+            float: right
+            padding: 4px 0
+            cursor: pointer
+            background: transparent
+            .icon-bar
+                background: $color-body
+                height: 2px
+                width: 30px
+                display: block
+                margin: 7px 0
+
+/* Menu Btns */
+.menu-btns
+    display: flex
+    align-items: center
+    .theme-btn
+        +gapTB(padding, 9px)
+        +res-bl(xl)
+            display: none
+        
+/* Header Search */
+.nav-search
+    position: relative
+    margin-right: 50px
+    margin-left: 25px
+    +res-bl(xl)
+        margin-right: 25px
+    +res-bl(ms)
+        display: none
+    > button
+        color: white
+        background: transparent
+    form
+        position: absolute
+        width: 320px
+        top: 100%
+        right: 0
+        z-index: 777
+        +flexcenter(center)
+        background-color: #fff
+        animation: fadeIn 0.5s
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05)
+        +res-bl(xs)
+            width: 275px
+        &.hide
+            display: none
+        input
+            border: none
+            padding: 15px 5px 15px 25px
+        button
+            background: transparent
+            padding: 15px 20px 15px 0
+    
+/* Menu Sidebar */
+.menu-sidebar
+    display: flex
+    +res-bl(ms)
+        margin-left: 25px
+    button
+        cursor: pointer
+        +circle($color-primary, 50px)
+        img
+            margin-top: -4px
+        
+/** hidden-sidebar *
+.hidden-bar
+    position: fixed
+    right: -350px
+    top: 0px
+    opacity: 0
+    width: 350px
+    height: 100%
+    z-index: 99999
+    overflow-y: auto
+    visibility: hidden
+    background-color: #222222
+    border-left: 1px solid #231b26
+    transition: all 0.5s ease
+    +res-bl(xs)
+        width: 300px
+    .social-style-one
+        a
+            +size(40px)
+            line-height: 40px
+
+.side-content-visible .hidden-bar
+    right: 0px
+    opacity: 1
+    visibility: visible
+
+.hidden-bar .inner-box
+    position: relative
+    padding: 100px 40px 50px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .cross-icon
+        position: absolute
+        right: 30px
+        top: 30px
+        cursor: pointer
+        color: #ffffff
+        font-size: 20px
+        transition: all 500ms ease
+    h4
+        position: relative
+        color: #ffffff
+        margin-bottom: 35px
+
+/*Appointment Form
+.hidden-bar .appointment-form
+    position: relative
+
+    .form-group
+        position: relative
+        margin-bottom: 20px
+
+    input
+        &[type="text"], &[type="email"]
+            position: relative
+            display: block
+            width: 100%
+            line-height: 23px
+            padding: 10px 25px
+            color: #ffffff
+            font-size: 16px
+            background: none
+            transition: all 300ms ease
+            border: 1px solid rgba(255, 255, 255, 0.1)
+
+    textarea
+        position: relative
+        display: block
+        width: 100%
+        line-height: 23px
+        padding: 10px 25px
+        color: #ffffff
+        font-size: 16px
+        border: 1px solid rgba(255, 255, 255, 0.1)
+        background: none
+        transition: all 300ms ease
+        resize: none
+
+    input::placeholder
+        font-size: 14px
+        color: #bdbdbd
+
+    textarea
+        &::placeholder
+            font-size: 14px
+            color: #bdbdbd
+
+    .form-group button
+        width: 100%
+        font-size: 16px
+        padding: 10px 15px
+        margin-bottom: 20px
+        border-color: white
+
+.form-back-drop
+    position: fixed
+    left: 100%
+    top: 0px
+    width: 100%
+    height: 100%
+    opacity: 0
+    background: rgba(0, 0, 0, 0.7)
+    visibility: hidden
+    z-index: 9990
+    transition: all 0.5s ease
+
+.side-content-visible .form-back-drop
+    opacity: 1
+    left: 0
+    visibility: visible
+    

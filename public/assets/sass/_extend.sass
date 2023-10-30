@@ -1,0 +1,37 @@
+/*******************************************************/
+/******************* ## Repeat Style ******************/
+/*******************************************************/
+// Global Extend/Inheritance 
+
+// Heading
+.heading,
+%heading
+    font-weight: 600
+    color: $color-secondary
+    font-family: $font-secondary  
+    
+%h1
+    @extend %heading
+    font-size: $h1-size
+
+%h2
+    @extend %heading
+    font-size: $h2-size
+
+%h3
+    @extend %heading
+    font-size: $h3-size
+
+%h4
+    @extend %heading
+    line-height: 1.4
+    font-size: $h4-size
+
+%h5
+    @extend %heading
+    line-height: 1.45
+    font-size: $h5-size
+
+%h6
+    @extend %heading
+    font-size: $h6-size
