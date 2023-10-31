@@ -17,14 +17,17 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="hero-content wow fadeInLeft delay-0-2s">
+                <h2>
+                  <span>全网最&nbsp;&nbsp;</span><i>[没想好写什么]的人</i><br/>
+                </h2>
                 <h1>
-                  Web111 <span>Design</span> <i>Agency</i>
+                  钟晨瑶
                 </h1>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="hero-right-image mt-20 wow fadeInUp delay-0-4s">
-                <img src="assets/images/hero/hero-right.png" alt="Hero" />
+                <img  src="assets/images/hero/hero-right.png" alt="Hero111" />
               </div>
             </div>
           </div>
@@ -33,17 +36,14 @@ const Index = () => {
           <div className="hero-bottom-image">
             <img src="assets/images/hero/hero.jpg" alt="Hero" />
             <div className="hero-social">
-              <a href="#">
-                <i className="fab fa-facebook-f" /> <span>Facebook</span>
+              <a href="https://v.douyin.com/idwoUvAY/" target="_blank">
+                <i className="fab fa-tiktok" /> <span>抖音@战斗天使ZCY</span>
               </a>
-              <a href="#">
-                <i className="fab fa-twitter" /> <span>Twitter</span>
+              <a href="https://m.weibo.cn/u/3179885602?t=0&luicode=10000011&lfid=231583" target="_blank">
+                <i className="fab fa-weibo" /> <span>微博@钟晨瑶</span>
               </a>
-              <a href="#">
-                <i className="fab fa-dribbble" /> <span>Dribbble</span>
-              </a>
-              <a href="#">
-                <i className="fab fa-behance" /> <span>Behance</span>
+              <a href="https://www.instagram.com/zcy.ycz/" target="_blank">
+                <i className="fab fa-instagram" /> <span>INS@zcy.ycz</span>
               </a>
             </div>
           </div>
@@ -455,16 +455,13 @@ const Index = () => {
                   </Link>
                   <div className="social-style-two">
                     <a href="#">
-                      <i className="fab fa-facebook-f" />
+                      <i className="fab fa-tiktok" />
                     </a>
                     <a href="#">
-                      <i className="fab fa-twitter" />
+                      <i className="fab fa-weibo" />
                     </a>
                     <a href="#">
                       <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
                     </a>
                   </div>
                 </div>

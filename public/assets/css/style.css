@@ -3869,7 +3869,14 @@ h6, .h6 {
   .hero-content h1 span {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white; }
+    -webkit-text-stroke-color: white;
+  }
+  .hero-content h2 span {
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+  }
+
 
 @media only screen and (max-width: 991px) {
   .hero-right-image {
@@ -3897,9 +3904,9 @@ h6, .h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
