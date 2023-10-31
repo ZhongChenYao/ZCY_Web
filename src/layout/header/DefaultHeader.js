@@ -11,15 +11,16 @@ const DefaultHeader = ({ singleMenu }) => {
           <div className="header-inner rpy-10 rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
-                <Link legacyBehavior href="/">
-                  <a>
-                    <img
-                      src="assets/images/logos/logo.png"
-                      alt="Logo"
-                      title="Logo"
-                    />
-                  </a>
-                </Link>
+                <h3>OMG</h3>
+                {/*<Link legacyBehavior href="/">*/}
+                {/*  <a>*/}
+                {/*    <img*/}
+                {/*      src="assets/images/logos/logo.png"*/}
+                {/*      alt="Logo"*/}
+                {/*      title="Logo"*/}
+                {/*    />*/}
+                {/*  </a>*/}
+                {/*</Link>*/}
               </div>
             </div>
             <div className="nav-outer ms-lg-auto clearfix">
@@ -28,16 +29,16 @@ const DefaultHeader = ({ singleMenu }) => {
               {/* Main Menu End*/}
             </div>
             {/* Nav Search */}
-            <NavSearch />
+            {/*<NavSearch />*/}
             {/* Menu Button */}
-            <div className="menu-btns">
-              {/* menu sidbar */}
-              <div className="menu-sidebar">
-                <button>
-                  <img src="assets/images/icons/toggler.svg" alt="Toggler" />
-                </button>
-              </div>
-            </div>
+            {/*<div className="menu-btns">*/}
+            {/*  /!* menu sidbar *!/*/}
+            {/*  <div className="menu-sidebar">*/}
+            {/*    <button>*/}
+            {/*      <img src="assets/images/icons/toggler.svg" alt="Toggler" />*/}
+            {/*    </button>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>
