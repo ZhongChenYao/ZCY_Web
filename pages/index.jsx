@@ -118,9 +118,10 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              <h2>
+              <h6>
                 钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>
-              </h2>
+                钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>
+              </h6>
             </span>
           </div>
         </div>
@@ -343,9 +344,10 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              <h2>
+              <h6>
                 钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>
-              </h2>
+                钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>钟晨瑶 <span>钟晨瑶</span>
+              </h6>
             </span>
           </div>
         </div>

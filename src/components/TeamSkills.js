@@ -13,7 +13,7 @@ const TeamSkills = () => {
                 value={89}
                 strokeWidth={20}
                 styles={buildStyles({
-                  pathColor: "#55E6A5",
+                  pathColor: "#b496f7",
                   trailColor: "#fff",
                 })}
               />
@@ -32,7 +32,7 @@ const TeamSkills = () => {
                 value={93}
                 strokeWidth={20}
                 styles={buildStyles({
-                  pathColor: "#55E6A5",
+                  pathColor: "#b496f7",
                   trailColor: "#fff",
                 })}
               />
@@ -51,7 +51,7 @@ const TeamSkills = () => {
                 value={75}
                 strokeWidth={20}
                 styles={buildStyles({
-                  pathColor: "#55E6A5",
+                  pathColor: "#b496f7",
                   trailColor: "#fff",
                 })}
               />

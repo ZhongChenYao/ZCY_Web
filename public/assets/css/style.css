@@ -59,7 +59,7 @@ body {
   font-family: var(--ygency-primary-font);
   --ygency-primary-font: Inter;
   --ygency-secondary-font: Inter;
-  --ygency-primary-color: #55E6A5;
+  --ygency-primary-color: #b496f7;
   --ygency-secondary-color: #ffffff;
   --ygency-tertiary-color: #16161c;
   --ygency-body-color: rgba(255, 255, 255, 0.75);
@@ -7552,10 +7552,10 @@ blockquote {
     .why-choose-item-two .icon .icon-bottom-shape {
       height: 80px;
       width: 2px;
-      background: -webkit-gradient(linear, left top, left bottom, from(#55E6A5), to(rgba(255, 255, 255, 0)));
-      background: -webkit-linear-gradient(top, #55E6A5 0%, rgba(255, 255, 255, 0) 100%);
-      background: -o-linear-gradient(top, #55E6A5 0%, rgba(255, 255, 255, 0) 100%);
-      background: linear-gradient(180deg, #55E6A5 0%, rgba(255, 255, 255, 0) 100%); }
+      background: -webkit-gradient(linear, left top, left bottom, from(#b496f7), to(rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(top, #b496f7 0%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(top, #b496f7 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(180deg, #b496f7 0%, rgba(255, 255, 255, 0) 100%); }
   .why-choose-item-two .content h4 {
     font-size: 22px;
     margin-bottom: 13px; }
@@ -8360,9 +8360,9 @@ blockquote {
       font-size: 32px; } }
 
 .testimonial-item.style-two hr {
-  background: -webkit-radial-gradient(50.43% 100.01%, 49.57% 329259.92%, #55E6A5 20%, rgba(85, 230, 165, 0) 100%);
-  background: -o-radial-gradient(50.43% 100.01%, 49.57% 329259.92%, #55E6A5 20%, rgba(85, 230, 165, 0) 100%);
-  background: radial-gradient(49.57% 329259.92% at 50.43% 100.01%, #55E6A5 20%, rgba(85, 230, 165, 0) 100%);
+  background: -webkit-radial-gradient(50.43% 100.01%, 49.57% 329259.92%, #b496f7 20%, rgba(85, 230, 165, 0) 100%);
+  background: -o-radial-gradient(50.43% 100.01%, 49.57% 329259.92%, #b496f7 20%, rgba(85, 230, 165, 0) 100%);
+  background: radial-gradient(49.57% 329259.92% at 50.43% 100.01%, #b496f7 20%, rgba(85, 230, 165, 0) 100%);
   height: 2px; }
 
 .testimonial-item.style-two .testimonial-footer {
@@ -8565,10 +8565,10 @@ blockquote {
   height: 2px;
   border: none;
   margin-top: 40px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.86%, #55E6A5), to(rgba(85, 230, 165, 0)));
-  background: -webkit-linear-gradient(left, #55E6A5 0.86%, rgba(85, 230, 165, 0) 100%);
-  background: -o-linear-gradient(left, #55E6A5 0.86%, rgba(85, 230, 165, 0) 100%);
-  background: linear-gradient(90deg, #55E6A5 0.86%, rgba(85, 230, 165, 0) 100%); }
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.86%, #b496f7), to(rgba(85, 230, 165, 0)));
+  background: -webkit-linear-gradient(left, #b496f7 0.86%, rgba(85, 230, 165, 0) 100%);
+  background: -o-linear-gradient(left, #b496f7 0.86%, rgba(85, 230, 165, 0) 100%);
+  background: linear-gradient(90deg, #b496f7 0.86%, rgba(85, 230, 165, 0) 100%); }
 
 .testimonial-five-right .testimonial-footer {
   margin-top: 40px; }
