@@ -11,8 +11,9 @@ const DefaultHeader = ({ singleMenu }) => {
           <div className="header-inner rpy-10 rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
-                <h3>OMG</h3>
-                {/*<Link legacyBehavior href="/">*/}
+                <Link legacyBehavior href="/">
+                  <h3>OMG</h3>
+
                 {/*  <a>*/}
                 {/*    <img*/}
                 {/*      src="assets/images/logos/logo.png"*/}
@@ -20,7 +21,7 @@ const DefaultHeader = ({ singleMenu }) => {
                 {/*      title="Logo"*/}
                 {/*    />*/}
                 {/*  </a>*/}
-                {/*</Link>*/}
+                </Link>
               </div>
             </div>
             <div className="nav-outer ms-lg-auto clearfix">

@@ -46,18 +46,19 @@ const DefaultFooter = () => {
                 {/*  src="assets/images/footer/lets-work.png"*/}
                 {/*  alt="Let's Work Man"*/}
                 {/*/>*/}
-                <span>此网站为项目开源， 个人能力有限， 欢迎一起运营。</span>
+                <h5>此网站为项目开源， 个人能力有限， 欢迎一起运营。</h5>
               </div>
               <div className="footer-contact-info wow fadeInUp delay-0-3s animated">
                 <a
                   className="theme-btn style-three"
-                  href="zcy_git_project@163.com"
+                  href="mailto:zcy_git_project@163.com"
                 >
                   zcy_git_project@163.com<i className="far fa-arrow-right" />
                 </a>
                 <a
                   className="theme-btn style-three phone-number"
                   href="https://github.com/ZhongChenYao/ZCY_Web"
+                  target={"_blank"}
                 >
                   GitHub<i className="far fa-arrow-right" />
                 </a>
@@ -71,7 +72,7 @@ const DefaultFooter = () => {
               </h4>
               <div className="footer-widget widget_nav_menu">
                 <h5>始于郑梓妍， 终于钟晨瑶。</h5>
-                <h5>理智看待， 不影响双方的生活。</h5>
+                <h5>理智看待， 不影响大家的生活。</h5>
                 {/*<ul className="list-style-two wow fadeInUp delay-0-3s animated">*/}
                 {/*  <li>*/}
                 {/*    <Link legacyBehavior href="about">*/}

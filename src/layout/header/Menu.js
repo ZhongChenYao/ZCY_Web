@@ -25,15 +25,15 @@ const DaskTopMenu = () => {
           作品集
         </Link>
       </li>
+      {/*<li>*/}
+      {/*  <Link legacyBehavior href="blog-standard">*/}
+      {/*    百科资料*/}
+      {/*  </Link>*/}
+      {/*</li>*/}
       <li>
-        <Link legacyBehavior href="blog-standard">
-          百科资料
-        </Link>
-      </li>
-      <li>
-        <Link legacyBehavior href="blog-standard">
+        <a href="https://zhongchenyao.love/" target="_blank">
           哎呀哎呀
-        </Link>
+        </a>
       </li>
     </ul>
   );

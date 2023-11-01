@@ -97,9 +97,15 @@ const Index = () => {
                 </div>
                 <div className="content">
                   <p>
-                    《完蛋我被美女包围了》： 郑梓妍
+                    完蛋！我被美女包围了！郑梓妍扮演者，
                     <br/>
-                    《爱唱歌的大学生》：选手
+                    本以为饰演的角色已经无人能敌了
+                    <br/>
+                    没想到， 本人比角色更让人喜欢。
+                    <br/>
+                    甚至还宠粉， 手机最后的电量要用在和粉丝的群聊里。
+                    <br/>
+                    <br/>
                   </p>
                   <Link legacyBehavior href="/about">
                     <a className="read-more mt-10">
@@ -136,15 +142,16 @@ const Index = () => {
                 <div className="section-title mb-60 wow fadeInUp delay-0-2s">
                   <span className="sub-title mb-15">再来点？</span>
                   <h2>主要经历</h2>
+                  <h6>根据公开资料显示， 拒绝过度发掘。</h6>
                 </div>
                 <div className="what-we-do-item wow fadeInUp delay-0-3s">
                   <div className="number">
                     <span>01</span>
                   </div>
                   <div className="content">
-                    <h5>2017年</h5>
+                    <h5>1998</h5>
                     <p>
-                      2017年主要经历
+                      出生于福建三明
                     </p>
                   </div>
                 </div>
@@ -153,9 +160,9 @@ const Index = () => {
                     <span>02</span>
                   </div>
                   <div className="content">
-                    <h5>2018年</h5>
+                    <h5>2019年</h5>
                     <p>
-                      2018年主要经历
+                      从华东政法大学退学， 复读考上中央戏剧学院
                     </p>
                   </div>
                 </div>
@@ -164,47 +171,13 @@ const Index = () => {
                     <span>03</span>
                   </div>
                   <div className="content">
-                    <h5>2019</h5>
+                    <h5>2023</h5>
                     <p>
-                      2019年主要经历
+                      完蛋！我被美女包围了！郑梓妍扮演者.
                     </p>
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="https://store.steampowered.com/app/2322560/_/" target={"_blank"}>
                       <a className="read-more style-two">
-                        <span>Read More</span>{" "}
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-                <div className="what-we-do-item wow fadeInUp delay-0-7s">
-                  <div className="number">
-                    <span>04</span>
-                  </div>
-                  <div className="content">
-                    <h5>2023年</h5>
-                    <p>
-                      完蛋我被美女包围了
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more style-two">
-                        <span>Read More</span>{" "}
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-                <div className="what-we-do-item wow fadeInUp delay-0-7s">
-                  <div className="number">
-                    <span>05</span>
-                  </div>
-                  <div className="content">
-                    <h5>xxx</h5>
-                    <p>
-                      xxx
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more style-two">
-                        <span>Read More</span>{" "}
+                        <span>游戏在这呢</span>{" "}
                         <i className="far fa-arrow-right" />
                       </a>
                     </Link>
@@ -375,7 +348,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">01</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="/works/work_1">
                   <a>完蛋！我被美女包围了！</a>
                 </Link>
               </h4>
@@ -398,7 +371,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">02</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="/works/work_2">
                   <a>爱唱歌的大学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </Link>
               </h4>
