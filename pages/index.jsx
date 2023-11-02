@@ -105,6 +105,8 @@ const Index = () => {
                     <br/>
                     甚至还宠粉， 手机最后的电量要用在和粉丝的群聊里。
                     <br/>
+
+                    <br/>
                     <br/>
                   </p>
                   <Link legacyBehavior href="/about">
@@ -204,8 +206,8 @@ const Index = () => {
             <div className="col-xl-2 col-lg-3 col-6">
               <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
                 <i className="fal fa-fan" />
-                <Counter end={1000000} extraClass={"w"} />
-                <span className="counter-title">全网粉丝</span>
+                <Counter end={1000000} extraClass={""} />
+                <span className="counter-title">全网粉丝（每周更新）</span>
               </div>
             </div>
           </div>
@@ -339,7 +341,7 @@ const Index = () => {
             <div className="col-lg-4 text-lg-end">
               <Link legacyBehavior href="/projects">
                 <a className="theme-btn mb-25 wow fadeInRight delay-0-2s">
-                  View More Projects <i className="far fa-arrow-right" />
+                  更多作品 <i className="far fa-arrow-right" />
                 </a>
               </Link>
             </div>
@@ -351,6 +353,8 @@ const Index = () => {
                 <Link legacyBehavior href="/works/work_1">
                   <a>完蛋！我被美女包围了！</a>
                 </Link>
+                <br/>
+                <h5><br/>有郑选郑， 无郑重开。</h5>
               </h4>
             </div>
             <div className="image">
