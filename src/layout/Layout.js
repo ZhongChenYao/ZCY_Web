@@ -7,6 +7,7 @@ import ScrollTop from "./ScrollTop";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import SideBar from "./header/SideBar";
+import { Analytics } from '@vercel/analytics/react';
 const Layout = ({ children, header, footer, singleMenu }) => {
   useEffect(() => {
     niceSelect();
@@ -21,6 +22,7 @@ const Layout = ({ children, header, footer, singleMenu }) => {
         <Header header={header} singleMenu={singleMenu} />
         <SideBar />
         {children}
+          <Analytics />
         <Footer footer={footer} />
         <ScrollTop />
       </div>
