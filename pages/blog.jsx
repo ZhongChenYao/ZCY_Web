@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <Layout>
       {/* Page Banner Start */}
-      <PageBanner pageName={"所有作品"} />
+      <PageBanner pageName={"主要作品"} />
       {/* Page Banner End */}
       {/* Blog Page Area start */}
       <section className="blog-page-area py-130 rpy-100 rel z-1">
@@ -15,12 +15,12 @@ const Blog = () => {
             <div className="col-xl-4 col-md-6">
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
+                  <img src="assets/images/zcy/work/work_1_top.webp" alt="Blog" />
                 </div>
                 <hr />
                 <h4>
                   <Link legacyBehavior href="/works/work_1">
-                    <a>完蛋！我被美女包围了！ —— 郑梓妍</a>
+                    <a>完蛋！我被美女包围了！</a>
                   </Link>
                 </h4>
               </div>
@@ -28,12 +28,12 @@ const Blog = () => {
             <div className="col-xl-4 col-md-6">
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
+                  <img src="assets/images/zcy/work/work_2_top.webp" alt="Blog" />
                 </div>
                 <hr />
                 <h4>
-                  <Link legacyBehavior href="/works/work_1">
-                    <a>完蛋！我被美女包围了！ —— 郑梓妍</a>
+                  <Link legacyBehavior href="/works/work_2">
+                    <a>淙淙</a>
                   </Link>
                 </h4>
               </div>
@@ -41,12 +41,12 @@ const Blog = () => {
             <div className="col-xl-4 col-md-6">
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
+                  <img src="assets/images/zcy/work/work_3_top.webp" alt="Blog"/>
                 </div>
                 <hr />
                 <h4>
-                  <Link legacyBehavior href="/works/work_1">
-                    <a>完蛋！我被美女包围了！ —— 郑梓妍</a>
+                  <Link legacyBehavior href="/works/work_3">
+                    <a>二次呼吸</a>
                   </Link>
                 </h4>
               </div>
@@ -54,12 +54,12 @@ const Blog = () => {
             <div className="col-xl-4 col-md-6">
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
+                  <img src="assets/images/zcy/work/work_4_top.webp" alt="Blog" />
                 </div>
                 <hr />
                 <h4>
-                  <Link legacyBehavior href="/works/work_1">
-                    <a>完蛋！我被美女包围了！ —— 郑梓妍</a>
+                  <Link legacyBehavior href="/works/work_4">
+                    <a>热搜</a>
                   </Link>
                 </h4>
               </div>

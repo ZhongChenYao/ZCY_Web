@@ -27,10 +27,10 @@ const ProjectDetails = () => {
         <div className="project-details-image rel z-1">
           <div className="container-fluid">
             <div className="image wow fadeInUp delay-0-2s">
-              <img style={{ width: "100%" }}
-                   src="../assets/images/zcy/work/work_3_top.webp"
-                   alt="Project"
-              />
+              {/*<img*/}
+              {/*     src="../assets/images/zcy/work/work_3_top.webp"*/}
+              {/*     alt="Project"*/}
+              {/*/>*/}
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const DaskTopMenu = () => {
   return (
     <ul className="navigation d-none d-lg-flex desktop-menu">
       <li>
-        <Link legacyBehavior href="blog-standard">
+        <Link legacyBehavior href="blog">
           作品集
         </Link>
       </li>

@@ -10,7 +10,7 @@ const ProjectDetails = () => {
             className="page-banner pt-210 rpt-150 pb-75 rel z-1"
             style={{ backgroundImage: "url(../assets/images/hero/hero-two-bg.png)" }}
         >
-          <div className="container container-1290">
+          <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <h1 className="hero-title style-two mt-65 mb-30 wow fadeInUp delay-0-2s">
@@ -27,10 +27,10 @@ const ProjectDetails = () => {
         <div className="project-details-image rel z-1">
           <div className="container-fluid">
             <div className="image wow fadeInUp delay-0-2s">
-              <img style={{ width: "100%" }}
-                   src="../assets/images/zcy/work/work_1_top.webp"
-                   alt="Project"
-              />
+              {/*<img*/}
+              {/*     src="../assets/images/zcy/work/work_1_top.webp"*/}
+              {/*     alt="Project"*/}
+              {/*/>*/}
             </div>
           </div>
         </div>

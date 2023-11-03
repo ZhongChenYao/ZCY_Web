@@ -401,7 +401,7 @@ const Index = () => {
             </div>
             <div className="image">
               <img
-                  src="assets/images/zcy/work/work_2_top.jpg"
+                  src="assets/images/zcy/work/work_2_top.webp"
                   alt="Project TimeLine Image"
                   width={"600px"}
               />
