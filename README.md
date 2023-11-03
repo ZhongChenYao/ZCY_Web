@@ -30,6 +30,6 @@ Issues中提出
 
 欢迎通过邮件联络
 
-zcy_git_project@163.com
+zcy_git_project@163.com  
 
 PS： 主要是怕社死， 暂不提供其它联系方式。
