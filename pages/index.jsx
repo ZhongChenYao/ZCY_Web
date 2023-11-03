@@ -219,7 +219,7 @@ const Index = () => {
             <div className="col-xl-2 col-lg-3 col-6">
               <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
                 <i className="fal fa-fan" />
-                <Counter end={1000000} extraClass={""} />
+                <Counter end={1600000} extraClass={""} />
                 <span className="counter-title">全网粉丝（每周更新）</span>
               </div>
             </div>
