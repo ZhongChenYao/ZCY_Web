@@ -118,11 +118,11 @@ const Index = () => {
                     <br/>
                     <br/>
                   </p>
-                  <Link legacyBehavior href="/about">
-                    <a className="read-more mt-10">
-                      看看更多？ <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
+                  {/*<Link legacyBehavior href="/about">*/}
+                  {/*  <a className="read-more mt-10">*/}
+                  {/*    看看更多？ <i className="far fa-arrow-right" />*/}
+                  {/*  </a>*/}
+                  {/*</Link>*/}
                 </div>
               </div>
             </div>

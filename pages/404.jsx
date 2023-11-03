@@ -11,32 +11,22 @@ const E404 = () => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="error-content rmb-55 wow fadeInRight delay-0-2s">
-                <h1>OPPS!</h1>
+                <h1>哎呀哎呀</h1>
                 <div className="section-title mb-50 rmb-35">
-                  <h2>This Page Are Can't Be Found</h2>
+                  <h2>你可以在这里发现更多的未来。</h2>
                 </div>
                 <Link legacyBehavior href="/">
                   <a className="theme-btn style-two">
-                    Go to Home <i className="far fa-arrow-right" />
+                    首页<i className="far fa-arrow-right" />
                   </a>
                 </Link>
-                <div className="social-style-four d-flex mt-60 rmt-35">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" /> <span>Facebook</span>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" /> <span>Twitter</span>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-dribbble" /> <span>Dribbble</span>
-                  </a>
-                </div>
+
               </div>
             </div>
             <div className="col-lg-7">
               <div className="error-image wow zoomIn delay-0-2s">
                 <img
-                  src="assets/images/background/404-error.png"
+                  src="assets/images/zcy/banner/zcy_banner_1.webp"
                   alt="404 Error"
                 />
               </div>
