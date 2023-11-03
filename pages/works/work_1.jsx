@@ -28,7 +28,7 @@ const ProjectDetails = () => {
           <div className="container-fluid">
             <div className="image wow fadeInUp delay-0-2s">
               <img style={{ width: "100%" }}
-                   src="../assets/images/zcy/zcy_work_1.jpg"
+                   src="../assets/images/zcy/work/work_1_top.webp"
                    alt="Project"
               />
             </div>
@@ -79,7 +79,7 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_1_3.jpg"
+                      src="../assets/images/zcy/work/work_1_1.webp"
                       alt="Project"
                   />
                 </div>
@@ -87,7 +87,7 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_1_3.jpg"
+                      src="../assets/images/zcy/work/work_1_2.webp"
                       alt="Project"
                   />
                 </div>
@@ -95,7 +95,7 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_1_1.jpg"
+                      src="../assets/images/zcy/work/work_1_4.webp"
                       alt="Project"
                   />
                 </div>
@@ -104,7 +104,25 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_1_1.jpg"
+                      src="../assets/images/zcy/work/work_1_3.webp"
+                      alt="Project"
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-6">
+                <div className="image mb-30 wow fadeInUp delay-0-2s">
+                  <img
+                      src="../assets/images/zcy/work/work_1_5.webp"
+                      alt="Project"
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-6">
+                <div className="image mb-30 wow fadeInUp delay-0-2s">
+                  <img
+                      src="../assets/images/zcy/work/work_1_6.webp"
                       alt="Project"
                   />
                 </div>

@@ -14,7 +14,7 @@ const ProjectDetails = () => {
             <div className="row">
               <div className="col-lg-12">
                 <h1 className="hero-title style-two mt-65 mb-30 wow fadeInUp delay-0-2s">
-                  淙淙
+                  二次呼吸
                 </h1>
                 <div className="banner-text wow fadeInUp delay-0-3s">
                 </div>
@@ -28,7 +28,7 @@ const ProjectDetails = () => {
           <div className="container-fluid">
             <div className="image wow fadeInUp delay-0-2s">
               <img style={{ width: "100%" }}
-                   src="../assets/images/zcy/work/work_2_top.jpg"
+                   src="../assets/images/zcy/work/work_3_top.webp"
                    alt="Project"
               />
             </div>
@@ -46,19 +46,20 @@ const ProjectDetails = () => {
                 <div className="row row-cols-lg-4 row-cols-sm-2 row-cols-1">
                   <div className="col">
                     <h5>角色</h5>
-                    <p className="sub-title mb-20">淙淙</p>
+                    <p className="sub-title mb-20">南溪</p>
                   </div>
                   <div className="col">
                     <h5>类型</h5>
-                    <p className="sub-title mb-20">短片</p>
+                    <p className="sub-title mb-20">电影</p>
                   </div>
                   <div className="col">
                     <h5>日期</h5>
-                    <p className="sub-title mb-20">2022/08/11</p>
+                    <p className="sub-title mb-20">2023/10/12</p>
                   </div>
                   <div className="col">
                     <h5>详情</h5>
-                    <p className="sub-title mb-20"><a href={"https://www.douyin.com/video/7149548611058011428"} target={"_blank"}>抖音</a></p>
+                    -
+                    {/*<p className="sub-title mb-20"><a href={""} target={"_blank"}>-</a></p>*/}
                   </div>
                 </div>
               </div>
@@ -70,7 +71,7 @@ const ProjectDetails = () => {
               </div>
               <div className="col-lg-8">
                 <div className="big-letter text">
-                  年轻女导游淙淙和男友正处于关系崩坏的边缘。这天，她邂逅了一个奇怪的老奶奶，声称自己要寻找一个神秘的野瀑布。迫于甩开难缠的男友，淙淙答应了奶奶的请求，但这次旅程却远远没有她所设想的那样简单…
+                  一个女孩因为时空错乱，遇到了另一个自己，从此被另一个自己取代。女孩决定杀死另一个自己，夺回自己的生活。可当她杀死另一个自己后，却发现生活并没有恢复成原来的样子，而是陷入了另一种虚无。最终，女孩决定自杀，结束这荒诞的一切。
                 </div>
               </div>
             </div>
@@ -79,7 +80,7 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_2_1.webp"
+                      src="../assets/images/zcy/work/work_3_1.webp"
                       alt="Project"
                   />
                 </div>
@@ -87,7 +88,7 @@ const ProjectDetails = () => {
               <div className="col-lg-6">
                 <div className="image mb-30 wow fadeInUp delay-0-2s">
                   <img
-                      src="../assets/images/zcy/work/work_2_2.webp"
+                      src="../assets/images/zcy/work/work_3_2.webp"
                       alt="Project"
                   />
                 </div>

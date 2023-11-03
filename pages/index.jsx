@@ -18,7 +18,7 @@ const Index = () => {
             <div className="col-lg-8">
               <div className="hero-content wow fadeInLeft delay-0-2s">
                 <h2>
-                  <span>全网最&nbsp;&nbsp;</span><i>[没想好写什么]的人</i><br/>
+                  <span>全网最&nbsp;&nbsp;</span><i>OMG</i>&nbsp;的人
                 </h2>
                 <h1>
                   钟晨瑶
@@ -41,16 +41,25 @@ const Index = () => {
                 style={{width: "100%", height: "800px", position: "relative"}}
             >
               <SwiperSlide className="testimonial-item style-three">
-                <img src="assets/images/zcy/swiper_1.jpg" alt=""  className="zoomImage"/>
+                <img src="assets/images/zcy/banner/zcy_banner_1.webp" alt=""  className="zoomImage"/>
               </SwiperSlide>
               <SwiperSlide className="testimonial-item style-three">
-                <img src="assets/images/zcy/swiper_2.jpg" alt="" className="zoomImage"/>
+                <img src="assets/images/zcy/banner/zcy_banner_2.webp" alt="" className="zoomImage"/>
               </SwiperSlide>
               <SwiperSlide className="testimonial-item style-three">
-                <img src="assets/images/zcy/swiper_4.jpg" alt="" className="zoomImage"/>
+                <img src="assets/images/zcy/banner/zcy_banner_3.webp" alt="" className="zoomImage"/>
               </SwiperSlide>
               <SwiperSlide className="testimonial-item style-three">
-                <img src="assets/images/zcy/swiper_5.webp" alt="" className="zoomImage"/>
+                <img src="assets/images/zcy/banner/zcy_banner_4.webp" alt="" className="zoomImage"/>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-item style-three">
+                <img src="assets/images/zcy/banner/zcy_banner_5.webp" alt="" className="zoomImage"/>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-item style-three">
+                <img src="assets/images/zcy/banner/zcy_banner_6.webp" alt="" className="zoomImage"/>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-item style-three">
+                <img src="assets/images/zcy/banner/zcy_banner_7.webp" alt="" className="zoomImage"/>
               </SwiperSlide>
 
             </Swiper>
@@ -82,7 +91,7 @@ const Index = () => {
             <div className="col-xl-5 col-lg-3">
               <div className="about-image rmb-45 wow fadeInUp delay-0-2s">
                 <img
-                  src="assets/images/zcy/circle_2.png"
+                  src="assets/images/zcy/circle_2.webp"
                   alt="Circle Text"
                 />
               </div>
@@ -151,9 +160,9 @@ const Index = () => {
                     <span>01</span>
                   </div>
                   <div className="content">
-                    <h5>1998</h5>
+                    <h5>首次出演前</h5>
                     <p>
-                      出生于福建三明
+                      1998年生于福建三明，2017年考上华东政法大学，为了追求真是的自己，退学复读并于2019年考上的中央戏剧学院。
                     </p>
                   </div>
                 </div>
@@ -162,9 +171,9 @@ const Index = () => {
                     <span>02</span>
                   </div>
                   <div className="content">
-                    <h5>2019年</h5>
+                    <h5>2022</h5>
                     <p>
-                      从华东政法大学退学， 复读考上中央戏剧学院
+                      主演电影《凉淙》 饰淙淙。
                     </p>
                   </div>
                 </div>
@@ -175,7 +184,11 @@ const Index = () => {
                   <div className="content">
                     <h5>2023</h5>
                     <p>
-                      完蛋！我被美女包围了！郑梓妍扮演者.
+                      10月出演电影《二次呼吸》 饰南溪， 并入围平遥国际电影节。
+                      <br/>
+                      10月出演游戏《完蛋!我被美女包围了!》 饰郑梓妍。
+                      <br/>
+                      12月出演电影演《热搜》 饰温妮。
                     </p>
                     <Link legacyBehavior href="https://store.steampowered.com/app/2322560/_/" target={"_blank"}>
                       <a className="read-more style-two">
@@ -190,7 +203,7 @@ const Index = () => {
             <div className="col-xl-6">
               <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
                 <img
-                  src="assets/images/zcy/swiper_3.jpg"
+                  src="assets/images/zcy/index_used_2.webp"
                   alt="What We Do"
                 />
               </div>
@@ -347,7 +360,8 @@ const Index = () => {
             </div>
           </div>
           <div className="project-timeline wow fadeInUp delay-0-2s">
-            <div className="content">
+            <div className="content"
+                style={{width: "300px"}}>
               <span className="serial-number">01</span>
               <h4>
                 <Link legacyBehavior href="/works/work_1">
@@ -357,14 +371,16 @@ const Index = () => {
                 <h5><br/>有郑选郑， 无郑重开。</h5>
               </h4>
             </div>
+
             <div className="image">
               <img
-                src="assets/images/zcy/zcy_work_1.jpg"
+                src="assets/images/zcy/work/zcy_work_1.webp"
                 alt="Project TimeLine Image"
+                width={"600px"}
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="/works/work_1">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -372,22 +388,26 @@ const Index = () => {
             </div>
           </div>
           <div className="project-timeline wow fadeInUp delay-0-2s">
-            <div className="content">
+            <div className="content"
+                 style={{width: "300px"}}>
               <span className="serial-number">02</span>
               <h4>
                 <Link legacyBehavior href="/works/work_2">
-                  <a>爱唱歌的大学生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                  <a>淙淙</a>
                 </Link>
+                <br/>
+                <h5><br/>送你一朵“小黄花”</h5>
               </h4>
             </div>
             <div className="image">
               <img
-                  src="assets/images/zcy/zcy_work_1.jpg"
+                  src="assets/images/zcy/work/work_2_top.jpg"
                   alt="Project TimeLine Image"
+                  width={"600px"}
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="/works/work_2">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -395,22 +415,26 @@ const Index = () => {
             </div>
           </div>
           <div className="project-timeline wow fadeInUp delay-0-2s">
-            <div className="content">
+            <div className="content"
+                 style={{width: "300px"}}>
               <span className="serial-number">03</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
-                  <a>完蛋！我被美女包围了！</a>
+                <Link legacyBehavior href="/works/work_3">
+                  <a>二次呼吸</a>
                 </Link>
+                <br/>
+                <h5><br/>像鸟儿一样，一直飞一直飞。</h5>
               </h4>
             </div>
             <div className="image">
               <img
-                  src="assets/images/zcy/zcy_work_1.jpg"
+                  src="assets/images/zcy/work/work_3_top.webp"
                   alt="Project TimeLine Image"
+                  style={{width: "600px"}}
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="/works/work_3">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -418,22 +442,24 @@ const Index = () => {
             </div>
           </div>
           <div className="project-timeline wow fadeInUp delay-0-2s">
-            <div className="content">
+            <div className="content"
+                 style={{width: "300px"}}>
               <span className="serial-number">04</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
-                  <a>完蛋！我被美女包围了！</a>
+                <Link legacyBehavior href="/works/work_4">
+                  <a>热搜</a>
                 </Link>
               </h4>
             </div>
             <div className="image">
               <img
-                  src="assets/images/zcy/zcy_work_1.jpg"
+                  src="assets/images/zcy/work/work_4_top.webp"
                   alt="Project TimeLine Image"
+                  style={{width: "600px"}}
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="/works/work_4">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
